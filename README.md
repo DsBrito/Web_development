@@ -31,6 +31,23 @@
      >here <-</a
   <br /><br />
 
+ 
+ <h3 align="left">Browser Tools</h3>
+ </a>
+ <p align="center">
+  Repl ->
+  <a href="https://replit.com//"
+     >here <-</a
+  <br /><br />
+ </a>
+ <p align="center">
+  Jsfiddle -> 
+  <a href="https://jsfiddle.net/"
+     >here <-</a
+  <br /><br />   
+    
+    
+    
     
 <div style="display: inline_block" align="left">
   
