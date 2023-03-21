@@ -70,6 +70,19 @@
     <img align="center" width="23.5%" src="https://user-images.githubusercontent.com/80075307/224572016-e8110675-c669-4c92-b9a0-256f3bf13802.png">
     <img align="center" width="40%" src="https://user-images.githubusercontent.com/80075307/224572118-bb6df855-f6d0-4f8e-9e18-94530ea8d843.png">
 
-
-      
+<h3 align="left">Extra links</h3>
+    <div style="display: inline_block" align="left">
+    Some links with guide/exercises about javascript
+    </a>
+    <p align="center">
+    Web docs Guilde -> 
+    <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Guide"
+       >here <-</a
+    <br /><br />  
+     </a>
+     <p align="center">
+      Exercises -> 
+      <a href="https://edabit.com/challenges"
+         >here <-</a
+      <br /><br />  
       
