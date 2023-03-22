@@ -65,7 +65,7 @@
       
 <h3 align="left">Run</h3>
     <div style="display: inline_block" align="left">
-    Need press Ctrl + Alt + N for run a  .js program with node
+    Need press Ctrl + Alt + N for run a  .js program with node or Ctrl + Alt + M for stop .js program
     <div style="display: inline_block" align="center">
     <img align="center" width="23.5%" src="https://user-images.githubusercontent.com/80075307/224572016-e8110675-c669-4c92-b9a0-256f3bf13802.png">
     <img align="center" width="40%" src="https://user-images.githubusercontent.com/80075307/224572118-bb6df855-f6d0-4f8e-9e18-94530ea8d843.png">
