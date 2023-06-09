@@ -51,7 +51,8 @@
     
 <div style="display: inline_block" align="left">
   
-## JavaScript
+## 1) JavaScript
+  Description: JavaScript is a programming language used by developers to make interactive Internet pages.
 <h3 align="left">Setting</h3>
  </a>
     Setting up a JavaScript Study Environment with Visual Studio Code and NodeJS
@@ -90,4 +91,4 @@
       The 10 Best Coding Challenge Websites -> 
       <a href="https://medium.com/coderbyte/the-10-best-coding-challenge-websites-for-2018-12b57645b654"
          >here <-</a
-      <br /><br />       
+      <br /><br />    
