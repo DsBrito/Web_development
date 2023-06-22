@@ -1,5 +1,11 @@
 //array
 const array = [1, 4, 9, 0];
+var vetor = new Array(1, 2, 3, 4, 5);
+var vetorx = [];
+vetorx.push(1);
+vetorx.push(2);
+vetorx.push(3);
+
 console.log("-  id 1 -> " + array[1]);
 console.log("-  id 70 -> " + array[70]);
 
