@@ -43,5 +43,6 @@ console.log(object5);
 
 
 //using jason
-const fromJSON = JSON.parse('{"info": "im a json code"}');
+const fromJSON = JSON.parse('\n'+'{"info": "im a json code"}');
 console.log("- json -> " + fromJSON.info);
+console.log(fromJSON.info);
