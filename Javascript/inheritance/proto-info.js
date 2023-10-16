@@ -28,4 +28,23 @@ obj2.talk();
 console.log("\n" + "- User.__proto__ === Function.__proto__: ");
 console.log(User.__proto__ === Function.__proto__);
 
+//type function
+console.log("\n" + "- types:")
+console.log("- string type : " + typeof String); 
+console.log("- function type : " + typeof Function);
+console.log("- object type : " + typeof Object);
+console.log("- array type : " + typeof Array);
 
+String.prototype.reverse = function () {
+    return this.split('').reverse().join('');
+}
+console.log("\n" + "- reverse string: " + "Lucy in the Sky with diamonds".reverse());
+
+Array.prototype.first = function () {
+    return this[0];
+}   
+
+console.log("\n" + "- first element: " + [1, 2, 3, 4, 5].first());
+
+
+ 
