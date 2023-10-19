@@ -1,6 +1,5 @@
 # WEB DEVELOPMENT
 
-## Web_development
 
 <div style="display: inline_block" align="center">
 <img align="center" width="45%" src="https://user-images.githubusercontent.com/80075307/224563322-f80c86cc-1334-4360-8a70-17477d114c82.jpeg">
@@ -48,10 +47,10 @@
     
     
     
-    
+---    
 <div style="display: inline_block" align="left">
-  
-## 1) JavaScript
+
+### 1) JavaScript
   Description: JavaScript is a programming language used by developers to make interactive Internet pages.
 <h3 align="left">Setting</h3>
  </a>
@@ -92,3 +91,24 @@
       <a href="https://medium.com/coderbyte/the-10-best-coding-challenge-websites-for-2018-12b57645b654"
          >here <-</a
       <br /><br />    
+
+---
+### 2) Node.js
+
+  `Description`: Node.js is the server-side (non-browser) javascript execution environment
+
+<br /><br /> 
+  <div style="display: inline_block" align="center">
+  <img width="75%" src="https://github.com/DsBrito/Web_development/assets/80075307/11a6eae0-5090-4e7d-984f-3760159a6f67">
+<br /><br /> 
+
+
+
+
+<div style="display: inline_block" align="left"> 
+
+`APPLICATION`: application written with javascript;
+
+`INTERPRETATION`: interpretation done by V8 (done in c language) + LIBUV (responsible for doing the asynchronous IO part);
+
+`REPRESENTATION`: in Node each archive represent a module;
