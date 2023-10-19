@@ -32,6 +32,22 @@ console.log(totalWeight);
 console.log("\n" + "- reduce boolean value: ");
 const is_subscribed = users.reduce((is_subscribed, user) => {
     return is_subscribed && user.is_subscribed;
-}, true);
+});
 
 console.log(is_subscribed);
+
+//construct my reduce function
+console.log("\n" + "- construct my reduce function: ");
+Array.prototype.myReduce = function (callback, initialValue) {
+    let accumulator = initialValue || this[0];
+    for (let i = 0; i < this.length; i++) {
+        accumulator = callback(accumulator, this[i], i, this);
+    }
+    return accumulator;
+}
+
+const sumAge = (users.reduce((age, user) => {
+    return age + user.age;
+}, 0));
+
+console.log(sumAge);
