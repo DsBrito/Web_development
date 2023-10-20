@@ -129,29 +129,48 @@ HTTP Messages - HTTP | MDN
 HTTP requests are messages sent by the client to initiate an action on the server
   <br /><br /> 
   <div style="display: inline_block" align="center">
-  <img width="75%" src="images/node/http-request.png">
+  <img width="68%" src="images/node/http-request.png">
   <br /><br /> 
 
   <br /><br /> 
   <div style="display: inline_block" align="center">
-  <img width="75%" src="images/node/localhost.png">
+  <img width="60%" src="images/node/localhost.png">
   <br /><br /> 
 
 
+<h3 align="left">Package JSON</h3>
+<div style="display: inline_block" align="left">
+
+  - Need use a command for create and define a package.json:      
+    - `npm init`
+
+  <div style="display: inline_block" align="center">
+  <img width="90%" src="images/node/createJSON.png">
+  <br /><br /> 
+  <div style="display: inline_block" align="left">
+
+- Or use this command for reply yes to all questions and create a clean package.json:
+  - `npm init -y` 
+
+- For install dependences (ex: axios)
+  - `npm i --save axios`
+- 
+  <div style="display: inline_block" align="center">
+  <img width="90%" src="images/node/dependenciesJSON.png">
+  <br /><br /> 
+  <div style="display: inline_block" align="left">
 
 
 
+  <br /><br /> 
 
+  <br /><br /> 
 
+  <br /><br /> 
 
+  <br /><br /> 
 
-
-
-
-
-
-
-
+  <br /><br /> 
 
 <h3 align="left">Extra links</h3>
     <div style="display: inline_block" align="left">
