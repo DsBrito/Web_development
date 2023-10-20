@@ -33,12 +33,12 @@ HTTP Messages - HTTP | MDN
 HTTP requests are messages sent by the client to initiate an action on the server
   <br /><br /> 
   <div style="display: inline_block" align="center">
-  <img width="75%" src="image.png">
+  <img width="75%" src="../images/node/http-request.png">
   <br /><br /> 
 
   <br /><br /> 
   <div style="display: inline_block" align="center">
-  <img width="75%" src="image-1.png">
+  <img width="75%" src="../images/node/localhost.png">
   <br /><br /> 
 
 
