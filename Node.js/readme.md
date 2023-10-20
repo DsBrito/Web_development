@@ -27,13 +27,48 @@
 The nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
 
 
+<h3 align="left">HTTP request</h3>
+
+HTTP Messages - HTTP | MDN
+HTTP requests are messages sent by the client to initiate an action on the server
+  <br /><br /> 
+  <div style="display: inline_block" align="center">
+  <img width="75%" src="image.png">
+  <br /><br /> 
+
+  <br /><br /> 
+  <div style="display: inline_block" align="center">
+  <img width="75%" src="image-1.png">
+  <br /><br /> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <h3 align="left">Extra links</h3>
     <div style="display: inline_block" align="left">
     Some links about node
     </a>
-    <p align="center">
-    Nodemon -> 
-    <a href="https://www.npmjs.com/package/nodemon"
-       >here <-</a
+      <p align="center">
+      Nodemon -> 
+      <a href="https://www.npmjs.com/package/nodemon"
+      >here <-</a
     <br /><br />  
-
+    </a>
+      <p align="center">
+      HTTP request -> 
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods"
+      >here <-</a
+    <br /><br />  
