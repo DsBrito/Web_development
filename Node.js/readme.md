@@ -187,3 +187,10 @@ HTTP requests are messages sent by the client to initiate an action on the serve
       <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods"
       >here <-</a
     <br /><br />  
+    </a>
+      <p align="center">
+      npm scripts -> 
+      <a href="https://docs.npmjs.com/cli/v10/using-npm/scripts"
+      >here <-</a
+    <br /><br />  
+
