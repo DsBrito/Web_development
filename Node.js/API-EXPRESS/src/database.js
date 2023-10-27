@@ -21,13 +21,25 @@ function saveProduct(product) {
     return product;
 };
 
+
+
+
+//get is used to get data
 function getProduct(id) {
     return products[id] || {};
 };
 
+//values is a function that will return the values of the products
 function getProducts() {
     return Object.values(products);
 };
+
+//delete is used to delete data
+function deleteProduct(id) {
+    const product = products[id];
+    delete products[id];
+    return product;
+}
 
 //exporting the functions
 module.exports = { saveProduct, getProduct, getProducts };

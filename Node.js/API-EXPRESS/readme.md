@@ -31,6 +31,10 @@ To start the API, need to use some commands in the directory where it will be cr
     -   `npm i --save express@4 -E`
   <br /><br />
 
+-   Install body-paser
+    -   `npm i --save body-parser@1 -E`
+  <br /><br />
+
 - install nodemon:
   - `sudo npm i -g nodemon`
   
