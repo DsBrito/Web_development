@@ -47,11 +47,19 @@ app.put('/product/:id', (req, res, next) => {
     res.send(product);
 });
 
+<<<<<<< Updated upstream
 //delete is used to delete data
 app.delete('/product/:id', (req, res, next) => {
     const product = database.deleteProduct(req.params.id);
     res.send(product);
 });
+=======
+// //delete is used to delete data
+// app.delete('/product/:id', (req, res, next)) => {
+//     const product = database.deleteProduct(req.params.id);
+//     res.send(product);
+// }
+>>>>>>> Stashed changes
 
 //listen is used to start the server
 app.listen(port, () => {
