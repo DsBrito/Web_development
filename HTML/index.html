@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>HTML CODES</title>
+    </head>
+    <body>
+        <h1>[HTML CODES]</h1>
+        <nav>
+            <a href="begin.html"> 01- begin </a> <br />
+            <a href="header.html">02- header </a> <br />
+            <a href="htmlCss.html">03- htmlCss </a> <br />
+        </nav>
+        <section id="codes"></section>
+        <script>
+            document.querySelectorAll('a').forEach(link => {
+                const codes = document.getElementById('codes');
+                link.onclick = function (e) {
+                    console.log(link.href);
+
+                    e.preventDefault();
+                    fetch(link.href)
+                        .then(res => res.text())
+                        .then(html => (codes.innerHTML = html));
+                };
+            });
+        </script>
+    </body>
+</html>
