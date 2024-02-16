@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <h1>Media Query</h1>
+    <style>
+      div {
+        font-size: 40px;
+        margin: 20px;
+        padding: 20px;
+        background-color: coral;
+        border: solid 5px;
+        display: none;
+      }
+
+      @media (max-width: 600px) {
+        .small-small {
+          display: block;
+        }
+      }
+      @media (max-width: 1000px), (orientation: portrait) {
+        .small-portrait {
+          display: block;
+        }
+      }
+      @media (min-width: 500px) and (max-width: 800px) {
+        .interval {
+          display: block;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="small-small">too Small</div>
+    <div class="small-portrait">Small or Portrait</div>
+    <div class="interval">interval</div>
+  </body>
+</html>

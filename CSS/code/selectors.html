@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <h1>CSS Selectors</h1>
+    <link rel="stylesheet" href="style/tag.css" />
+    <style>
+      /* * {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      /* .tag {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      /* #plataform {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+      /* 
+      #rank > div {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+      /* 
+      #rank section {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      /* p + ul {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      /*       
+      p ~ ul {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      /* [music] {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      /* [music="amazon-music"] {   
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      } */
+
+      [music*="usic"] {
+        color: #ff0;
+        background-color: hsl(204, 100%, 73%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="tag">
+      <div class="tag">
+        <p class="tag">1</p>
+        <ul class="tag" music="amazon-music">
+          <li>Jericho (Iniko)</li>
+          <li>Demons (Imagine Dragons)</li>
+        </ul>
+        <ul class="tag" music="youtube-music">
+          <li>Old Tow Road (Lil Nas X)</li>
+          <li>Rap GOd (Eminem)</li>
+        </ul>
+        <ol id="plataform" class="tag">
+          <li>Youtube Music</li>
+          <li>Amazon Music</li>
+          <li>Spotify</li>
+        </ol>
+        <div id="rank" class="tag">
+          <div class="tag">
+            <section class="tag">
+              <span class="tag">1</span>
+              <p class="tag">2</p>
+              <span class="tag">3</span>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/tag.js"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <h1>Especificidade CSS</h1>
+    <style>
+      /* https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+      /* https://specificity.keegan.st/ */
+
+      p {
+        background-color: teal;
+      }
+      .obs {
+        background-color: greenyellow;
+        border: dashed 10px;
+        padding: 30px !important;
+        font-size: 60px;
+      }
+      p.obs {
+        padding: 150px;
+        text-align: center;
+        background: linear-gradient(to right, red, green);
+      }
+    </style>
+  </head>
+
+  <body>
+    <p class="obs">LOOOK TO MEE ツ愛</p>
+  </body>
+</html>
