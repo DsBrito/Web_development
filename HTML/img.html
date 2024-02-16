@@ -1,0 +1,86 @@
+<h1>[Simple IMG JPG]</h1>
+<p>
+    <img
+        src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+        alt="WALL OF A CITY"
+        width="500"
+        height="350"
+        title="WALL OF A CITY ~ cod3r img"
+    />
+</p>
+
+<h1>[IMG WITH TEXT]</h1>
+<p class="text">
+    <img
+        src="http://files.cod3r.com.br/curso-web/avatar.jpg"
+        alt="Avatar"
+        height="50"
+        align="left"
+        title="avatar text~ cod3r jpg"
+    />
+    Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
+    Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
+    Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
+    Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
+    Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
+    Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
+    Text, Text, Text, Text, Text, Text,
+</p>
+
+<h1>[IMG WITH ZOOM]</h1>
+<p class="city"></p>
+
+<h1>[GIF IMG]</h1>
+<p>
+    <img
+        src="http://files.cod3r.com.br/curso-web/imagem2.gif"
+        alt="INTRO COD3R"
+        height="280"
+        title="INTRO COD3R ~ cod3r gif"
+    />
+</p>
+
+<h1>[PNG IMG ~ 200%]</h1>
+<p class="circle">
+    <img
+        src="http://files.cod3r.com.br/curso-web/imagem3.png"
+        alt="Rio de Janeiro"
+        height="280"
+        title="Rio de Janeiro ~ cod3r png"
+    />
+</p>
+
+<h1>[PICTURE WITH CONDITION ~(min-width: 600px or..)]</h1>
+
+<p>
+    <picture>
+        <source
+            srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
+            media="(min-width: 600px)"
+        />
+        <img
+            src="http://files.cod3r.com.br/curso-web/logo-estreita.png"
+            alt="Logo"
+        />
+    </picture>
+</p>
+<style>
+    .circle {
+        width: 500px;
+        background-color: white;
+    }
+    .text {
+        width: 400px;
+    }
+    .text img {
+        margin-right: 12px;
+    }
+    .city {
+        width: 513px;
+        height: 342px;
+        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 200%;
+    }
+</style>

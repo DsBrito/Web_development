@@ -1,0 +1,58 @@
+<!-- formulary -->
+<h1>[Form name and email]</h1>
+<form action="http://localhost:3003/user" method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <button type="submit">Submit</button>
+</form>
+
+<h1>[Form - email and password]</h1>
+<form action="http://localhost:3003/user" method="post">
+    <input type="text" name="email" placeholder="Email" />
+    <input type="password" name="password" placeholder="Password" />
+    <button type="submit">Submit</button>
+</form>
+
+<h1>[Form with radio and role]</h1>
+<form action="http://localhost:3003/user" method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="radio" name="role" value="admin" /> Admin
+    <input type="radio" name="role" value="user" /> User
+    <button type="submit">Submit</button>
+</form>
+
+<h1>[Form with checkbox and text area]</h1>
+<form action="http://localhost:3003/user" method="post">
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <input type="checkbox" name="role" value="admin" /> Admin
+    <input type="checkbox" name="role" value="user" /> User
+    <textarea name="message" placeholder="Message"></textarea>
+    <div>
+        <input type="checkbox" name="terms" />
+        <label for="terms">I accept the terms</label>
+    </div>
+</form>
+<style>
+    textarea {
+        display: block;
+    }
+</style>
+
+<h1>[Form with dropdown]</h1>
+<form method="post">
+    <input type="hidden" name="id" value="3" />
+    <input type="text" name="name" placeholder="Name" />
+    <input type="text" name="email" placeholder="Email" />
+    <select name="Estado">
+        <option value="ES">Espírito Santo</option>
+        <option value="SP">São Paulo</option>
+        <option value="CE">Ceara</option>
+        <option value="RJ">Rio de Janeiro</option>
+        <option value="AM">Amazonas</option>
+        <option value="GO">Goiás</option>
+    </select>
+    <button formaction="http://localhost:3003/user">Submit</button>
+    <button formaction="http://localhost:3003/user/3">Update</button>
+</form>

@@ -1,0 +1,61 @@
+<h1>Project</h1>
+<ul class="tree">
+    <li>
+        <span wm-folder> Backend</span>
+        <ul>
+            <li>
+                <span wm-folder> postgress</span>
+
+                <ul>
+                    <li>user table</li>
+                    <li>itens table</li>
+                    <li>cart table</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder> config</span>
+                <ul>
+                    <li>routes.js</li>
+                    <li>model.js</li>
+                    <li>layout.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+        <span wm-folder> Frontend</span>
+
+        <ul>
+            <li>
+                <span wm-folder> react</span>
+
+                <ul>
+                    <li>components</li>
+                    <li>pages</li>
+                    <li>services</li>
+                </ul>
+            </li>
+            <li>
+                <span wm-folder> config</span>
+                <ul>
+                    <li>routes.js</li>
+                    <li>model.js</li>
+                    <li>layout.js</li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<!-- <link rel="stylesheet" href="../CSS/tree.css" /> -->
+<link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css" />
+
+<script>
+    document.querySelectorAll('[wm-folder]').forEach(folder => {
+        folder.onclick = function (e) {
+            const ul = this.nextElementSibling;
+            const d = ul.style.display;
+            ul.style.display = d === 'none' ? 'block' : 'none';
+        };
+    });
+</script>

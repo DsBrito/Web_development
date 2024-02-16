@@ -1,0 +1,115 @@
+<!-- tables -->
+
+<h1>Simple table</h1>
+<table>
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Age</th>
+    </tr>
+    <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+    </tr>
+    <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+    </tr>
+    <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>80</td>
+    </tr>
+</table>
+
+<h1>Custom table</h1>
+<table border="15">
+    <thead>
+        <tr>
+            <th>Game</th>
+            <th>Genre</th>
+            <th>Year</th>
+            <th>Unit</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Final Fantasy</td>
+            <td>RPG</td>
+            <td>1987</td>
+            <td>1</td>
+            <td>$50.00</td>
+        </tr>
+        <tr>
+            <td>Street Fighter</td>
+            <td>Fighting</td>
+            <td>1987</td>
+            <td>2</td>
+            <td>$40.00</td>
+        </tr>
+        <tr>
+            <td>Legend of Zelda</td>
+            <td>Adventure</td>
+            <td>1986</td>
+            <td>3</td>
+            <td>$60.00</td>
+        </tr>
+    </tbody>
+    <tfloot>
+        <tr>
+            <td colspan="4">Total</td>
+            <td>$150.00</td>
+        </tr>
+    </tfloot>
+</table>
+<!--
+<style>
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+
+    tbody tr:hover {
+        background-color: #8fda39;
+    }
+    tfoot {
+        background-color: #f31c1c;
+        color: #d60b0b;
+        font-weight: bold;
+    }
+</style> -->
+
+<style>
+    table {
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 8px;
+    }
+
+    thead tr {
+        border-bottom: solid 3px #444;
+    }
+
+    tbody tr:hover {
+        background-color: #8fda39;
+    }
+
+    tfoot {
+        background-color: #f31c1c;
+        color: #d60b0b;
+        font-weight: bold;
+    }
+</style>
