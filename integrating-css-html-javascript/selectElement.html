@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <h1>Select Elements #01</h1>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="info exercice">
+    <div id="first">#first</div>
+    <div>Second</div>
+    <div class="the last"><span wb-attrib>.the .last</div>
+    <script>
+      //   document.getElementById("first").classList.add("contrast");
+      //   document.querySelector("#first").classList.add("contrast");
+      const isSelected = (s) =>
+        document.querySelectorAll(s).forEach((e) => {
+          e.classList.add("contrast");
+        });
+      const noSelected = (s) =>
+        document.querySelectorAll(s).forEach((e) => {
+          e.classList.remove("contrast");
+        });
+
+      //   isSelected("div");
+      //   noSelected("*");
+      //   isSelected(".the.last");
+      //   isSelected(".last"); 
+      //   noSelected("*");
+      isSelected(":not(#first)");
+      noSelected("*");
+      isSelected(':nth-child(1)')
+
+    </script>
+  </body>
+</html>

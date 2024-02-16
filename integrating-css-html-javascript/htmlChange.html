@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <h1>Change HTML</h1>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="info exercice">
+    <div>
+      <p>Radom text</p>
+    </div>
+    <script>
+      const div = document.querySelector("div");
+      div.innerHTML = "Other text";
+      div.insertAdjacentHTML("beforeBegin", "<p>Before Begin</p>");
+      div.insertAdjacentHTML("afterBegin", "<p>After Begin</p>");
+      div.insertAdjacentHTML("beforeEnd", "<p>Before End</p>");
+      div.insertAdjacentHTML("afterEnd", "<p>After End</p>");
+    </script>
+  </body>
+</html>

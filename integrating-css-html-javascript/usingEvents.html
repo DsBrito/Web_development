@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <h1>Using click event:</h1>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="info exercice">
+    <nav>
+      <a href="https://www.youtube.com/@saty9136" onclick="goToYoutube(event)"
+        >Saty Shaiya</a
+      >
+    </nav>
+    <div>
+      <p onclick="goToMove()">Click here to Move</p>
+    </div>
+    <script>
+      function goToYoutube(event) {
+        event.preventDefault();
+        console.log("Go to Youtube...");
+        setTimeout(() => {
+          const link = event.target;
+          window.location.href = link.href;
+        }, 2000);
+      }
+      function goToMove() {
+        const item = document.querySelector("div");
+        item.style.position = "absolute";
+
+        item.onmousemove = (event) => {
+          const element = event.target;
+          element.style.cursor = "move";
+
+          if (event.buttons) {
+            element.style.top = `${event.clientY - element.clientHeight / 2}px`;
+            element.style.left = `${event.clientX - element.clientWidth / 2}px`;
+          }
+        };
+      }
+    </script>
+  </body>
+</html>
