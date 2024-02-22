@@ -6,7 +6,7 @@
 
 **Web development with Javascript, Angular, React, Next, Vue, Node, HTML, CSS, jQuery, Bootstrap, Webpack, Gulp and MySQL**
 
-<h3 align="left">Course Repository</h3>
+<h3 align="justify">Course Repository</h3>
  </a>
  <p align="center">
   Somes exercices about web development
@@ -14,7 +14,7 @@
      >here <-</a
   <br /><br />
 
-<h3 align="left">Help about Terminal</h3>
+<h3 align="justify">Help about Terminal</h3>
  </a>
  <p align="center">
   Linux/Mac ->
@@ -28,7 +28,7 @@
      >here <-</a
   <br /><br />
 
- <h3 align="left">Browser Tools</h3>
+ <h3 align="justify">Browser Tools</h3>
  </a>
  <p align="center">
   Repl ->
@@ -44,32 +44,148 @@
 
 ---
 
-<div style="display: inline_block" align="left">
+<div style="display: inline_block" align="justify">
 
-### 1) JavaScript
+### 1) Node.js
+
+- `Description`: Node.js is the server-side (non-browser) javascript execution environment
+
+<br /><br />
+
+  <div style="display: inline_block" align="center">
+  <img width="75%" src="https://github.com/DsBrito/Web_development/assets/80075307/11a6eae0-5090-4e7d-984f-3760159a6f67">
+  <br /><br />
+
+<div style="display: inline_block" align="justify">
+
+- Application: application written with javascript;
+
+- Interpretation: interpretation done by V8 (done in c language) + LIBUV (responsible for doing the asynchronous IO part);
+
+<h3 align="justify">Node Modules</h3>
+
+- Check node version:
+
+  - `node -v`
+
+- Install lodash:
+
+  - `npm i lodash`
+
+- install nodemon:
+  - `sudo npm i -g nodemon`
+
+The nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
+
+<h3 align="justify">HTTP request</h3>
+
+HTTP Messages - HTTP | MDN
+HTTP requests are messages sent by the client to initiate an action on the server
+<br /><br />
+
+  <div style="display: inline_block" align="center">
+  <img width="68%" src="images/node/http-request.png">
+  <br /><br />
+
+<br /><br />
+
+  <div style="display: inline_block" align="center">
+  <img width="60%" src="images/node/localhost.png">
+  <br /><br />
+
+<h3 align="justify">Package JSON</h3>
+<div style="display: inline_block" align="justify">
+
+- Need use a command for create and define a package.json:
+
+  - `npm init`
+
+  <div style="display: inline_block" align="center">
+  <img width="90%" src="images/node/createJSON.png">
+  <br /><br />
+  <div style="display: inline_block" align="justify">
+
+- Or use this command for reply yes to all questions and create a clean package.json:
+
+  - `npm init -y`
+
+- For install dependences (ex: axios)
+
+  - `npm i --save axios`
+
+  <div style="display: inline_block" align="center">
+  <img width="90%" src="images/node/dependenciesJSON.png">
+  <br /><br />
+  <div style="display: inline_block" align="justify">
+
+<h3 align="justify">Extra links</h3>
+    <div style="display: inline_block" align="justify">
+    Some links about node
+    </a>
+      <p align="center">
+      Nodemon ->
+      <a href="https://www.npmjs.com/package/nodemon"
+      >here <-</a
+    <br /><br />
+    </a>
+      <p align="center">
+      HTTP request ->
+      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods"
+      >here <-</a
+    <br /><br />
+
+---
+
+### 2) ES NEXT
+
+<div style="display: inline_block" align="center">
+    <img align="center" width="80%" src="./ESNEXT/image/ESNEXT.webp">
+   <br /><br />
+<div style="display: inline_block" align="justify">
+<h3 align="justify">What is ESNext JavaScript?</h3>
+
+- ESNext JavaScript is a version of JavaScript that includes all of the language's latest features and updates. It is an evolution of ECMAScript, which is the standard on which JavaScript is based. ESNext is developed by the TC39 technical committee, which is responsible for defining the language specifications.
+  <br /><br />
+
+<h3 align="justify">Arrow Functions</h3>
+
+- Arrow Functions are a more concise way of writing functions in JavaScript. They allow you to write functions more quickly and easily, using a simpler syntax and without the need to use the “function” keyword.
+  <br /><br />
+
+<h3 align="justify">Async/Await</h3>
+
+- Async/Await is a simpler and more readable way of handling asynchronous operations in JavaScript. It allows you to write asynchronous code synchronously, which makes it easier to develop applications that depend on asynchronous calls, such as HTTP requests.
+  <br /><br />
+
+<h3 align="justify">Spread Operator</h3>
+
+- The Spread Operator is an operator that allows you to spread the elements of an array or object into another array or object. It facilitates the manipulation and copying of arrays and objects, making the code more concise and readable.
+  <br /><br />
+
+### 3) JavaScript
 
 Description: JavaScript is a programming language used by developers to make interactive Internet pages.
 
-<h3 align="left">Setting</h3>
+<h3 align="justify">Setting</h3>
  </a>
     Setting up a JavaScript Study Environment with Visual Studio Code and NodeJS
     <a href="https://blog.cod3r.com.br/configuracao-do-ambiente/"
        >here <-</a
     <br /><br />
 
-<h3 align="left">VsCode Extension</h3>
+<h3 align="justify">VsCode Extension</h3>
     <div style="display: inline_block" align="center">
     <img align="center" width="30%" src="https://user-images.githubusercontent.com/80075307/224575584-0838e575-9e1f-4744-9b97-afe79be816ed.png">
 
-<h3 align="left">Run</h3>
-    <div style="display: inline_block" align="left">
+<h3 align="justify">Run</h3>
+    <div style="display: inline_block" align="justify">
     Need press Ctrl + Alt + N for run a  .js program with node or Ctrl + Alt + M for stop .js program
     <div style="display: inline_block" align="center">
     <img align="center" width="23.5%" src="https://user-images.githubusercontent.com/80075307/224572016-e8110675-c669-4c92-b9a0-256f3bf13802.png">
     <img align="center" width="40%" src="https://user-images.githubusercontent.com/80075307/224572118-bb6df855-f6d0-4f8e-9e18-94530ea8d843.png">
 
-<h3 align="left">Extra links</h3>
-    <div style="display: inline_block" align="left">
+<h3 align="justify">Extra links</h3>
+    <div style="display: inline_block" align="justify">
     Some links with guide/exercises about javascript
     </a>
     <p align="center">
@@ -92,89 +208,69 @@ Description: JavaScript is a programming language used by developers to make int
 
 ---
 
-### 1) Node.js
+### 4) HTML
 
--   Description`: Node.js is the server-side (non-browser) javascript execution environment
-
-<br /><br />
-
-  <div style="display: inline_block" align="center">
-  <img width="75%" src="https://github.com/DsBrito/Web_development/assets/80075307/11a6eae0-5090-4e7d-984f-3760159a6f67">
-  <br /><br />
-
-<div style="display: inline_block" align="left">
-
--   Application: application written with javascript;
-
--   Interpretation: interpretation done by V8 (done in c language) + LIBUV (responsible for doing the asynchronous IO part);
-
-<h3 align="left">Node Modules</h3>
-
--   Check node version:
-
-    -   `node -v`
-
--   Install lodash:
-
-    -   `npm i lodash`
-
--   install nodemon:
-    -   `sudo npm i -g nodemon`
-
-The nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected.
-
-<h3 align="left">HTTP request</h3>
-
-HTTP Messages - HTTP | MDN
-HTTP requests are messages sent by the client to initiate an action on the server
-<br /><br />
-
-  <div style="display: inline_block" align="center">
-  <img width="68%" src="images/node/http-request.png">
-  <br /><br />
-
-<br /><br />
-
-  <div style="display: inline_block" align="center">
-  <img width="60%" src="images/node/localhost.png">
-  <br /><br />
-
-<h3 align="left">Package JSON</h3>
-<div style="display: inline_block" align="left">
-
--   Need use a command for create and define a package.json:
-    -   `npm init`
-
-  <div style="display: inline_block" align="center">
-  <img width="90%" src="images/node/createJSON.png">
-  <br /><br />
-  <div style="display: inline_block" align="left">
-
--   Or use this command for reply yes to all questions and create a clean package.json:
-
-    -   `npm init -y`
-
--   For install dependences (ex: axios)
-
-    -   `npm i --save axios`
-
+<h3 align="justify">What is HTML?</h3>
     <div style="display: inline_block" align="center">
-    <img width="90%" src="images/node/dependenciesJSON.png">
-    <br /><br />
-    <div style="display: inline_block" align="left">
+    <img align="center" width="80%" src="./HTML/image/html1.jpg">
+   <br /><br />
 
-<h3 align="left">Extra links</h3>
-    <div style="display: inline_block" align="left">
-    Some links about node
+<h3 align="justify">Extra links</h3>
+    <div style="display: inline_block" align="justify">
+    Some links with guide about HTML
     </a>
-      <p align="center">
-      Nodemon ->
-      <a href="https://www.npmjs.com/package/nodemon"
-      >here <-</a
+    <p align="center">
+   HTML Element Reference ->
+    <a href="https://www.w3schools.com/tags/"
+       >here <-</a
     <br /><br />
+     </a>
+     <p align="center">
+      HTML elements reference
+ ->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+         >here <-</a
+      <br /><br />
+     </a>
+
+---
+
+### 5) CSS
+
+<h3 align="justify">What is CSS?</h3>
+    <div style="display: inline_block" align="justify">
+    <img align="center" width="80%" src="./CSS/image/css1.jpg">
+   <br /><br />
+    <img align="center" width="80%" src="./CSS/image/css2.png">
+   <br /><br />
+
+<h3 align="justify">Extra links</h3>
+    <div style="display: inline_block" align="justify">
+    Some links with guide about HTML
     </a>
-      <p align="center">
-      HTTP request ->
-      <a href="https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods"
-      >here <-</a
-    <br /><br />
+   <p align="center">
+    CSS  Reference ->
+   <a href="https://devdocs.io/css/"
+       >here <-</a
+    ><br />
+   </a>
+     <p align="center">
+      CSS tutorial ->
+      <a href="https://www.w3schools.com/css/"
+         >here <-</a
+     ><br />
+     </a>
+     <p align="center">
+     CSS SPEC­I­FI­CA­TIONS ->
+<a href="https://www.w3.org/Style/CSS/specs.en.html"
+         >here <-</a
+     ><br />
+</a>
+     <p align="center">
+     CSS: Cascading Style Sheets ->
+<a href="https://www.w3schools.com/css/"
+         >here <-</a
+     ><br />
+</a>
+
+---
