@@ -139,7 +139,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 ### 2) ES NEXT
 
 <div style="display: inline_block" align="center">
-    <img align="center" width="80%" src="./ESNEXT/image/ESNEXT.webp">
+    <img align="center" width="40%" src="./ESNEXT/image/ESNEXT.webp">
    <br /><br />
 <div style="display: inline_block" align="justify">
 <h3 align="justify">What is ESNext JavaScript?</h3>
@@ -161,6 +161,8 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 
 - The Spread Operator is an operator that allows you to spread the elements of an array or object into another array or object. It facilitates the manipulation and copying of arrays and objects, making the code more concise and readable.
   <br /><br />
+
+---
 
 ### 3) JavaScript
 
