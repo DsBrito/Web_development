@@ -1,16 +1,72 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='UTF-8'>
+  <head>
+    <meta charset="UTF-8" />
     <title>XMLHttpRequest #01</title>
-    <link rel='stylesheet' href='css/estilo.css'>
-</head>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body class="conteudo exercicio">
-    <h1>Estados</h1>
+  <body class="info exercice">
+    <h1>States</h1>
 
     <script>
-        // ...
+      function ajax(config) {
+        const xhr = new HMLHttpRequest();
+
+        //open a request type GET and wait to recive a parameter (url) and true (asynchronous)
+        xhr.open("GET", config.url, true);
+
+        xhr.onload = (e) => {
+          if (xhr.status === 200) {
+            config.sucesso(xhr.response);
+          } else if (xhr.status >= 400) {
+            config.erro({
+              code: xhr.status,
+              text: xhr.statusText,
+            });
+          }
+        };
+
+        xhr.send();
+      }
+      function createTable(states) {
+        const line = states.map((states) => {
+          const dataId = document.createElement("data");
+          dataId.innerHTML = state.id;
+
+          const dataName = document.createElement("data");
+          dataName.innerHTML = state.nome;
+
+          const dataSigla = document.createElement("data");
+          dataSigla.innerHTML = state.dataSigla;
+
+          const tr = document.createElement("tr");
+
+          tr.appendChild(dataId);
+          tr.appendChild(dataName);
+          tr.appendChild(dataSigla);
+
+          return tr;
+        });
+
+        const table = document.createElement("table");
+        line.array.forEach((element) => {
+          table.appendChild(element);
+        });
+        document.body.appendChild(table);
+      }
+      ajax({
+        url: "data/states.json.json",
+        method: "get",
+        sucesso(resposta) {
+          const states = JSON.parse(resposta);
+          createTable(states);
+        },
+        erro(e) {
+          const msg = document.createTextNode(`${e.code}: ${e.text}`);
+          document.body.appendChild(msg);
+        },
+      });
     </script>
-</body>
+  </body>
+</html>
