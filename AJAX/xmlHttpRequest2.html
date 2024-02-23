@@ -4,7 +4,7 @@
 <head>
     <meta charset='UTF-8'>
     <title>XMLHttpRequest #02</title>
-    <link rel='stylesheet' href='css/estilo.css'>
+    <link rel='stylesheet' href='css/style.css'>
     <style>
         input[type=file] {
             display: flex;
@@ -17,11 +17,46 @@
     </style>
 </head>
 
-<body class="conteudo exercicio">
-    <input type="file" name="arquivo" />
-    <div class="progresso"></div>
+<body class="info exercice">
+    <input type="file" name="nameFile" />
+    <div class="progress"></div>
 
     <script>
-        // ...
+        
+        function ajaxUpload(config){
+
+            const xhr = new XMLHttpRequest();
+
+            if(xhr.upload){
+                xhr.upload.onprogress  = e =>{
+                    
+                    const actual = e.loaded;
+                    const total = e.total;
+                    const percent =  Math.floor(actual / total) * 100;
+                    config.progress({actual, total, percent});
+                }
+            }
+
+            xhr.open("POST", config.url,true);
+            xhr.send(config.formData);
+        }
+
+
+         document.querySelector('input[type=file]').onchange  = e =>{
+            const inputFile = e.target;
+            const formData = new FormData();
+            formData.append(inputFile.name, inputFile.files[0]);
+
+            ajaxUpload({
+                url: "upload",
+                formData: formData,
+                progress(data){
+                    const progress = document.querySelector('.progress');
+                    progress.innerHTML = JSON.stringify(data);
+                }
+            })
+         }
+
+
     </script>
 </body>
