@@ -139,7 +139,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 ### 2) ES NEXT
 
 <div style="display: inline_block" align="center">
-    <img align="center" width="40%" src="./ESNEXT/image/ESNEXT.webp">
+    <img align="center" width="40%" src="./images/esnext//ESNEXT.webp">
    <br /><br />
 <div style="display: inline_block" align="justify">
 <h3 align="justify">What is ESNext JavaScript?</h3>
@@ -213,10 +213,12 @@ Description: JavaScript is a programming language used by developers to make int
 ### 4) HTML
 
 <h3 align="justify">What is HTML?</h3>
-    <div style="display: inline_block" align="center">
-    <img align="center" width="80%" src="./HTML/image/html1.jpg">
-   <br /><br />
 
+- HTML is a markup language that defines the structure of your content. HTML consists of a series of elements, which you use to enclose, or wrap, different parts of the content to make it appear a certain way, or act a certain way. The enclosing tags can make a word or image hyperlink to somewhere else, can italicize words, can make the font bigger or smaller, and so on.
+
+<h3 align="justify">Why use HTML?</h3>
+
+- HTML is essential for structuring web content, providing a universal language understood by all browsers. Its simplicity and compatibility ensure seamless accessibility across devices, promoting inclusivity online. By organizing information with HTML tags, developers enhance readability and improve search engine optimization. Integrated with CSS and JavaScript, HTML enables the creation of dynamic and visually appealing web experiences.
 <h3 align="justify">Extra links</h3>
     <div style="display: inline_block" align="justify">
     Some links with guide about HTML
@@ -240,11 +242,22 @@ Description: JavaScript is a programming language used by developers to make int
 ### 5) CSS
 
 <h3 align="justify">What is CSS?</h3>
-    <div style="display: inline_block" align="justify">
-    <img align="center" width="80%" src="./CSS/image/css1.jpg">
-   <br /><br />
-    <img align="center" width="80%" src="./CSS/image/css2.png">
-   <br /><br />
+
+- Cascading Style Sheets (CSS) is a web development language that controls the appearance of elements on a webpage. It works hand-in-hand with markup languages like HTML (Hypertext Markup Language) or XML (Extensible Markup Language) to define the visual style and formatting of those elements.
+
+<h3 align="justify">How Does CSS Work with HTML?
+?</h3>
+
+- If HTML were the engine components of a car, CSS would be the body style and the paint job. A website can run without CSS, but it certainly isn’t pretty. CSS makes the front-end of a website shine and it creates a great user experience. Without CSS, websites would be less pleasing to the eye and likely much harder to navigate. In addition to layout and format, CSS is responsible for font color and more
+
+<h3 align="justify">Why Is CSS so important?
+</h3>
+
+- CSS is used to define styles for your web pages, including the design, layout and variations in display for different devices and screen sizes.
+
+- CSS is responsible for the text style, size, positioning, color, and more on a website. It’s also what controls how a website’s style shifts between desktop and mobile versions. Without CSS, websites would look pretty boring.
+
+
 
 <h3 align="justify">Extra links</h3>
     <div style="display: inline_block" align="justify">
