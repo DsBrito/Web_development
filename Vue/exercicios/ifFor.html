@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>If & For</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercicie">
+    <div id="app">
+      <h1>Array</h1>
+
+      <p v-for="(game,i) in games">
+        {{i+1}}) {{game.name}} -- {{game.price}}
+
+        <span v-if="game.price ===`R$ ${0.0}`"> --------> Free!!!</span>
+        <span v-else-if="game.price >= `R$ ${100.0}`">
+          --------> Discount 15%
+        </span>
+        <span v-else> --------> Discount 40% </span>
+      </p>
+      <h1>List with v-for</h1>
+      <ul style="list-style: disc">
+        <li v-for="n in 5">{{n}}</li>
+      </ul>
+
+      <h1>List with v-show</h1>
+
+      <ul style="list-style: none">
+        <li v-for="n in 50">
+          <span v-show="n>=35">{{n}}</span>
+        </li>
+      </ul>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          games: [
+            { name: "Shaiya", price: `R$ ${0.0}` },
+            { name: "Pac-Man", price: `R$ ${15.0}` },
+            { name: "Minecraft", price: `R$ ${100.0}` },
+            { name: "Mario Kart 8", price: `R$ ${99.0}` },
+            { name: "Counter-Strike", price: `R$ ${0.0}` },
+            { name: "The Last of Us", price: `R$ ${147.0}` },
+            { name: "Grand Theft Auto V ", price: `R$ ${55.0}` },
+            { name: "Hogwarts Legacy", price: `R$ ${300.0}` },
+            { name: "Call of Duty ", price: `R$ ${80.0}` },
+          ],
+        },
+      });
+    </script>
+  </body>
+</html>

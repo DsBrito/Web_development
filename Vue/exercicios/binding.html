@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Binding</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercice">
+    <div id="app">
+      <p>{{link}}</p>
+      <h1>using the v-bind</h1>
+      <p><a v-bind:href="link"> My channel </a></p>
+      <p><a :href="link"> My channel without v-bind </a></p>
+      <!-- v-bind: to vue use html tags need : before the tag -->
+
+      <!-- att in both directions -->
+      <h1>using the v-model</h1>
+      <p>
+        <input type="text" v-model="name" /> <br />
+        <span>{{"the name in data is: "}} {{name}}</span>
+      </p>
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          name: "Dsbrito",
+          link: "https://www.youtube.com/@saty9136",
+        },
+
+        //if need use some action when change a variable
+        watch: {
+          name(newValue) {
+            console.log(newValue.toUpperCase());
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

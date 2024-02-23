@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Basic Concepts</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercice">
+    <div id="app">
+      <p>1) {{"el: Sum 10 + 3 -> "}} {{10 +3}}</p>
+
+      <p>2) {{"data: Product:"}} {{name}}, R$ {{price}}</p>
+      <p>
+        3) {{"functions: Upper case -> "}} {{"go to upper case".toUpperCase()}}
+      </p>
+      <p>4) {{"methods : Date -> "}} {{realHour()}}</p>
+      <p>5) {{"computed : Discount -> R$"}} {{priceWithDescount}}</p>
+    </div>
+
+    <script>
+      //vue controller
+      new Vue({
+        el: "#app",  //element selector
+        data: {             //data info
+          name: "Notebook",
+          price: 4999.9,
+          discount: 0.15,
+        },
+
+        methods: {  //methods 
+          realHour() {
+            return new Date().toLocaleString();
+          },
+        },
+        computed: {  //computed
+          priceWithDescount() {
+            return this.price * (1 - this.discount);
+          },
+        },
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Eventos</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercice">
+    <div id="app">
+      {{count}}
+      <p>
+        <button v-on:click="add">+1</button>
+      </p>
+      <p>
+        <button @click="sub">-1</button>
+      </p>
+      <p @mousemove="changePosition">Coordinate {{x}} e {{y}}</p>
+      <input type="text" @keyup.enter ="notify"></input>
+
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          x: "0",
+          y: "0",
+          count: "0",
+        },
+        methods: {
+          add() {
+            this.count++;
+          },
+          sub() {
+            this.count--;
+          },
+          changePosition(event) {
+            this.x = event.clientX;
+            this.y = event.clientY;
+          },
+          notify(){
+            alert("Enter!")
+          }
+        },
+      });
+    </script>
+  </body>
+</html>
