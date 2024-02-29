@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>XML HTTP Request</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body class="info exercice">
+    <h1>States List</h1>
+
+    <script>
+
+      //XMLHttpRequest is a built-in browser object that allows to make HTTP requests in JavaScript
+      function ajax(config) {
+        const xhr = new XMLHttpRequest();
+
+        //xhr.open is a method that initializes a request
+        xhr.open(config.method, config.url, true);
+
+        //xhr.onload is a function that will be called when the request is completed
+        xhr.onload = e => {
+          if (xhr.status === 200) {
+            config.success(xhr.responseText);
+          } else if (xhr.status >= 400){
+            config.error({
+              code: xhr.status,
+              message: xhr.statusText
+            });
+          }
+        };
+        xhr.send();
+      }
+
+      //createTable is a function that creates a table with the states
+      function createTable(states) {
+            const linhas = states.map(state => {
+                const tdId = document.createElement('td')
+                tdId.innerHTML = state.id
+
+                const tdName = document.createElement('td')
+                tdName.innerHTML = state.nome
+
+                const tdAcronym = document.createElement('td')
+                tdAcronym.innerHTML = state.acronym
+
+                const tr = document.createElement('tr')
+
+                tr.appendChild(tdId)
+                tr.appendChild(tdName)
+                tr.appendChild(tdAcronym)
+
+                return tr
+            })
+
+            const tabela = document.createElement('table')
+            linhas.forEach(linha => tabela.appendChild(linha))
+            document.body.appendChild(tabela)
+        }
+
+     //ajax is a function that makes a request to the server
+      ajax({
+        method: 'GET',
+        url: 'data/states.json',
+        success(response) {
+          const states= JSON.parse(response);
+          createTable(states);
+
+        },
+        error(error) {
+         const mesage = document.createTextNode(`Erro: ${error.code} ${error.message}`);
+         document.body.appendChild(mensage);
+        }
+      });
+
+    </script>
+  </body>
+</html>
+
