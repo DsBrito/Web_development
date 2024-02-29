@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>XMLHttpRequest #03</title>
+    <link rel='stylesheet' href='css/style.css'>
+</head>
+
+<body class="info exercice">
+    <h1>States</h1>
+
+    <script>
+        function  ajax(config) {
+            const xhr = new XMLHttpRequest()
+            xhr.open(config.method,config.url,true)
+            xhr.onreadystatechange = e => {
+                if(xhr.readyState ===4){
+                    if(xhr.status ===200){
+                        config.sucess(xhr.responseXML)
+                    }
+                    else if (xhr.status >=400) {
+                        config.erro({
+                            code: xhr.status,
+                            text: xhr.statusText
+                        })
+                        
+                    }
+                }
+            }
+            xhr.send()
+        }
+
+        
+        ajax({
+            url: "data/states.xml",
+            method: "get",
+            sucess(response){
+                const states = response.getElementsByTagName("state")
+                const itens = Array.from(states).reduce((html,state)=> html + `<li>${state.attributes.name.value}</li>`,'')
+            
+            //sting é convertida para DOM, nao precisou inserir novos itens/linhas pois concatenou em somente uma string no final
+                document.body.insertAdjacentHTML('beforeEnd',`<ul>${itens}</ul>`)
+            },
+            erro(e){
+                const mensage = document.createTextNode(`${e.code}: ${e.text}`)
+                document.body.appendChild(mensage)
+            }
+        })
+    </script>
+</body>
