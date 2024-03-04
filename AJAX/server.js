@@ -47,4 +47,17 @@ app.post('/uploads', (req, res) => {
     });
 });
 
+
+
+//For recive data from formulary to backend, need build a post route configurated to interpret the data
+app.post('/formulary', (req, res) => {
+
+    //send the object data to frontend with a id
+    res.send({
+        ...req.body,
+        id:1
+    });
+})
+
+
 app.listen(3000, () => console.log('Server is running on port 3000'));
