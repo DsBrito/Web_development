@@ -50,7 +50,7 @@ li {
 }
 
 .exercice div:nth-of-type(1) {
-    background-color: darkgoldenrod;
+    background-color: rgb(11, 184, 155);
 }
 
 .exercice div:nth-of-type(2) {
