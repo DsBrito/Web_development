@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Fetch API</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        form input,
+        form select,
+        form button {
+            margin: 10px;
+            font-size: 1.6em;
+        }
+    </style>
+</head>
+
+<body class="info exercice">
+    <h1>Fetch formulary</h1>
+    <form name="userForm" action="formulary" method="post">
+        <input type="text" name="name" placeholder="Name..." />
+        <input type="text" name="surname" placeholder="Surname..." />
+        <button>Save</button>
+    </form>
+    <div id="result"></div>
+    <script>
+        document.userForm.onsubmit = async function(e) {
+            e.preventDefault();
+            const form = document.userForm;
+            const data = new FormData(form);
+            data.append('ajax',true)
+
+         
+
+            const options ={
+                method: form.method,
+                body: new URLSearchParams(data)
+            }
+            fetch(form.action, options)
+                  .then(resp => resp.json())
+                  .then(json => { 
+                        const result = document.getElementById('result'); 
+                        result.innerHTML = JSON.stringify(json); 
+                    }).catch(error => {
+                        result.innerHTML = error;
+                    })
+      
+
+            
+            //this is the same as the options above, where the method is POST and the body is the data from the form
+            // const response = await fetch('formulary', {
+            //     method: 'POST',
+            //     body: new URLSearchParams(data)
+            // });
+
+            // const result = await response.text();
+            // document.getElementById('result').innerHTML = result;
+
+            
+            // try{
+            //     const response = await fetch(form.action, options);
+            //     const result = await response.json();
+            //     result.innerHTML = JSON.stringify(json);
+            // } catch (error){
+            //     result.innerHTML = error;
+            // }
+                  
+        }
+    </script>
+</body>
