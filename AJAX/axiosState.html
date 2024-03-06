@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Axios #01</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <script src="js/axios.js"></script>
+</head>
+
+<body class="info exercice">
+    <h1>States with Axios</h1>
+
+    <script>
+    //Axios is a promise-based HTTP client for the browser and Node.js. It makes asynchronous HTTP requests to REST endpoints and performs CRUD operations.
+    //Different from fetch, axios is a promise-based library, so you can use async/await to make your code look synchronous.
+    ///Inside the resp.data. we have the result of the request and dont need wait for the response.json() as in fetch
+
+
+    
+    const url = 'data/states.json'
+    axios(url).then(resp => {
+
+        //reduce is a function that can be used to combine all the elements of an array into a single value.
+        const itens = resp.data.reduce((html,states) => 
+             html += `<li>${states.name} - ${states.acronym}</li>`
+        , '')
+
+        //insertAdjacentHTML is a function that can be used to insert a string of text as HTML, into a specified position.
+        document.body.insertAdjacentHTML('beforeend', `<ul>${itens}</ul>`)
+        })
+</script>
+</body>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Axios #02</title>
+    <link rel='stylesheet' href='css/style.css'>
+    <script src="js/axios.js"></script>
+</head>
+
+<body class="info exercice">
+    <h1>Axios Get/Post</h1>
+    <div id="get"></div>
+    <div id="post"></div>
+
+    <script>
+        function showResult(id, data){
+            
+            //convert json object to string
+            const text = JSON.stringify(data); 
+            document.getElementById(id).innerHTML = text;
+        };
+
+
+        //using query
+        axios('evenOrOdd?number=5').then(res => showResult('get', res.data));
+
+        //using params
+        // axios.get('evenOrOdd',{
+        //     params: {
+        //         number: 10
+        //     }
+        // }).then(res => showResult('get', res.data));
+        
+
+        axios.post('formulary', {
+            name: 'Ana',
+            age: 20
+        }).then(res => showResult('post', res.data));
+</script>
+</body>
