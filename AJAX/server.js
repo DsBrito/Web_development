@@ -60,4 +60,18 @@ app.post('/formulary', (req, res) => {
 })
 
 
+//To recive data from frontend.. have this forms:
+//req.body - for data from formulary ...ex: /file
+//req.query - for data from url ...ex: /file?name=saty
+//req.params - for data from url with params ...ex: file/:number
+
+app.get('/evenOrOdd',(req,res)=>{
+    const number = parseInt(req.query.number) % 2 === 0 
+    res.send({
+        // number,
+        evenOrOdd: number ? 'even' : 'odd'
+    
+    })
+})
+
 app.listen(3000, () => console.log('Server is running on port 3000'));
