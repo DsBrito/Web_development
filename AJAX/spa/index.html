@@ -4,7 +4,7 @@
 <head>
     <meta charset='UTF-8'>
     <title>Mini SPA</title>
-    <link rel='stylesheet' href='../css/estilo.css'>
+    <link rel='stylesheet' href='../css/style.css'>
     <style>
         nav {
             font-size: 2em;
@@ -18,13 +18,50 @@
     </style>
 </head>
 
-<body class="conteudo">
+<body class="info">
     <nav>
-        <a href wm-link="series.html" wm-destino=".pagina">Séries</a> |
-        <a href wm-link="linguagens.html" wm-destino=".pagina">Linguagens</a>
+        <a href link="series.html" destiny=".page">Series</a> |
+        <a href link="languages.html" destiny=".page">Languages</a>
     </nav>
-    <div class="pagina"></div>
+    <div class="page"></div>
     <script>
-        // ...
+        function ajaxNavigate(url, selector, push = true){
+            if(!url || !selector) return;
+
+            // Catch the element
+            const element = document.querySelector(selector);
+
+            // for catch the hmtml info, need to use the fetch
+            // need convert to text, because the fetch return a promise and the promise is a object
+            // after that, need to use the innerHTML to put the html in the element
+            fetch(url)
+                .then(resp => resp.text())
+                .then(html => {
+                    element.innerHTML = html
+
+                    // if push is true, the history.pushState will be executed (selector is the element that will be updated)
+                    if(push) {
+                        history.pushState({ selector }, " Ajax Page", url)
+                      }
+                }).catch(e => console.error(e))
+        }
+
+        // Catch all the links
+        document.querySelectorAll('[link]').forEach(link => {
+          const url = link.attributes['link'].value;
+          const selector = link.attributes['destiny'].value;
+
+          link.onclick = e => {
+            e.preventDefault();
+            ajaxNavigate(url, selector);
+          }
+
+        })
+
+        window.onpopstate = e => {
+            if(e.state) {
+                navegarViaAjax(window.location.href, e.state.selector, false)
+            }
+        }
     </script>
 </body>
