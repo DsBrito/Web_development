@@ -289,3 +289,53 @@ Description: JavaScript is a programming language used by developers to make int
 </a>
 
 ---
+
+### 6) Ajax ~ Axios ~ Fetch
+
+<h3 align="justify">What is Ajax?</h3>
+Ajax is a web development technique that allows you to update specific parts of a web page without having to reload the entire page. can be used for:
+
+  - Asynchronous content loading
+  - Form validation
+  - User authentication
+  - Recommender systems
+  - Searches and filters    
+  - Voting and rating systems
+  - Chat Bot and Auto fill
+
+<h3 align="justify">What is Axios?</h3>
+
+Axios is a promise-based HTTP Client for node.js and the browser. It is isomorphic (= it can run in the browser and nodejs with the same codebase). On the server-side it uses the native node.js http module, while on the client (browser) it uses XMLHttpRequests.
+
+<h3 align="justify">What is Fetch?</h3>
+Fetch is a built-in web API in modern web browsers that provides an interface for making HTTP requests to servers. It is part of the JavaScript Fetch API, which offers a more powerful and flexible way to fetch resources (such as JSON data, HTML, or images) asynchronously from a server.
+
+<h3 align="justify">What is the difference between ajas axios and fetch?</h3>
+
+`Ajax` is a technique for asynchronous communication in web development, while `Axios` and `Fetch` are libraries or APIs specifically designed for making HTTP requests. Axios provides a simple and elegant interface for making requests, while Fetch is a built-in web API that offers a more modern and flexible approach to fetching resources asynchronously.
+
+The data sent by fetch() must be stringified. The URL was passed as an argument in fetch() . In Axios, however, the URL is part of the set of values ​​sent in the “options” object
+
+
+<h3 align="justify">Extra links</h3>
+    <div style="display: inline_block" align="justify">
+    Some links with guide about Ajax, Axios, Fetch
+    </a>
+   <p align="center">
+    Ajax Documentation ->
+    <a href=https://api.jquery.com/category/ajax/"
+       >here <-</a
+    ><br />
+     </a>
+     <p align="center">
+     Axios Documentation ->
+    <a href="https://axios-http.com/docs/intro"
+            >here <-</a
+        ><br />
+    </a>
+     <p align="center">
+      Fetch Documentation ->
+      <a href="https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+         >here <-</a
+     ><br />
+</a>
