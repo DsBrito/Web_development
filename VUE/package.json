@@ -1,10 +1,10 @@
 {
-  "name": "exercicios",
+  "name": "exercices",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "exercicios": "http-server ./exercicios -c-1",
+    "exercices": "http-server ./exercices -c-1",
     "qrcode": "http-server ./qrcode -c-1",
     "sales": "http-server ./sales -c-1"
   },
