@@ -36,13 +36,13 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 <br /><br />
 
   <div style="display: inline_block" align="center">
-  <img width="68%" src="../images/node/http-request.png">
+  <img width="68%" src="../IMAGES/node/http-request.png">
   <br /><br />
 
 <br /><br />
 
   <div style="display: inline_block" align="center">
-  <img width="60%" src="../images/node/localhost.png">
+  <img width="60%" src="../IMAGES/node/localhost.png">
   <br /><br />
 
 <h3 align="left">Package JSON</h3>
@@ -52,7 +52,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
     -   `npm init`
 
   <div style="display: inline_block" align="center">
-  <img width="90%" src="../images/node/createJSON.png">
+  <img width="90%" src="../IMAGES/node/createJSON.png">
   <br /><br />
   <div style="display: inline_block" align="left">
 
@@ -63,7 +63,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 -   For install dependences (ex: axios)
     -   `npm i --save axios`
     <div style="display: inline_block" align="center">
-     <img width="90%" src="../images/node/dependenciesJSON.png">
+     <img width="90%" src="../IMAGES/node/dependenciesJSON.png">
      <br /><br />
      <div style="display: inline_block" align="left">
 

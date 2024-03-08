@@ -84,13 +84,13 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 <br /><br />
 
   <div style="display: inline_block" align="center">
-  <img width="68%" src="images/node/http-request.png">
+  <img width="68%" src="IMAGES/node/http-request.png">
   <br /><br />
 
 <br /><br />
 
   <div style="display: inline_block" align="center">
-  <img width="60%" src="images/node/localhost.png">
+  <img width="60%" src="IMAGES/node/localhost.png">
   <br /><br />
 
 <h3 align="justify">Package JSON</h3>
@@ -101,7 +101,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
   - `npm init`
 
   <div style="display: inline_block" align="center">
-  <img width="90%" src="images/node/createJSON.png">
+  <img width="90%" src="IMAGES/node/createJSON.png">
   <br /><br />
   <div style="display: inline_block" align="justify">
 
@@ -114,7 +114,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
   - `npm i --save axios`
 
   <div style="display: inline_block" align="center">
-  <img width="90%" src="images/node/dependenciesJSON.png">
+  <img width="90%" src="IMAGES/node/dependenciesJSON.png">
   <br /><br />
   <div style="display: inline_block" align="justify">
 
@@ -139,7 +139,7 @@ HTTP requests are messages sent by the client to initiate an action on the serve
 ### 2) ES NEXT
 
 <div style="display: inline_block" align="center">
-    <img align="center" width="40%" src="./images/esnext//ESNEXT.webp">
+    <img align="center" width="40%" src="./IMAGES/esnext//ESNEXT.webp">
    <br /><br />
 <div style="display: inline_block" align="justify">
 <h3 align="justify">What is ESNext JavaScript?</h3>
@@ -339,3 +339,20 @@ The data sent by fetch() must be stringified. The URL was passed as an argument 
          >here <-</a
      ><br />
 </a>
+
+---
+
+### 6) Gulp
+
+Gulp is a popular JavaScript task runner built on Node.js. It helps automate repetitive tasks in your development workflow, such as compiling Sass to CSS, minifying JavaScript files, optimizing images, and much more. Gulp uses a code-over-configuration approach, allowing developers to write tasks using JavaScript code instead of configuring them through external files. This makes it highly flexible and customizable for various project requirements. Gulp operates through a system of plugins, which are small Node.js modules that perform specific tasks, making it easy to extend its functionality. Overall, Gulp is widely used in web development to streamline the build process and improve productivity.
+
+<h3 align="justify">Extra links</h3>
+    <div style="display: inline_block" align="justify">
+    Some links with guide Gulp
+    </a>
+   <p align="center">
+    Ajax Documentation ->
+    <a href="https://gulpjs.com/docs/en/getting-started/quick-start"
+       >here <-</a
+    ><br />
+    

@@ -10,7 +10,7 @@ Postman is a popular API (Application Programming Interface) development and tes
      >here </a
   <br /><br /> 
 <div style="display: inline_block" align="center">
-<img align="center" width="70%" src="./images/postman.png">
+<img align="center" width="70%" src="./IMAGES/postman.png">
 
 ---    
 <div style="display: inline_block" align="left">
@@ -23,7 +23,7 @@ To start the API, need to use some commands in the directory where it will be cr
   
 <br /><br /> 
 <div style="display: inline_block" align="center">
-    <img align="center" width="50%" src="./images/packageJSON.png"> 
+    <img align="center" width="50%" src="./IMAGES/packageJSON.png"> 
 <div style="display: inline_block" align="left">
 <br /><br />
 
@@ -47,7 +47,7 @@ To start the API, need to use some commands in the directory where it will be cr
    
 <br /><br />
 <div style="display: inline_block" align="center">
-    <img align="center" width="65%" src="./images/nodemon.png"> 
+    <img align="center" width="65%" src="./IMAGES/nodemon.png"> 
 <div style="display: inline_block" align="left">
 <br /><br />
 
@@ -58,7 +58,7 @@ To start the API, need to use some commands in the directory where it will be cr
 - Create the server
 
 <div style="display: inline_block" align="center">
-    <img align="center" width="80%" src="./images/server.png"> 
+    <img align="center" width="80%" src="./IMAGES/server.png"> 
 <div style="display: inline_block" align="left">
 <br /><br /
 
@@ -66,7 +66,7 @@ To start the API, need to use some commands in the directory where it will be cr
 
 <br /><br />
 <div style="display: inline_block" align="center">
-    <img align="center" width="65%" src="./images/npmStart.png"> 
+    <img align="center" width="65%" src="./IMAGES/npmStart.png"> 
 <div style="display: inline_block" align="left">
 <br /><br />
 
@@ -74,7 +74,7 @@ To start the API, need to use some commands in the directory where it will be cr
 - For test the requisiton need start Postiman and write the url port:  `http://localhost:8082/product`
 <br /><br />
 <div style="display: inline_block" align="center">
-    <img align="center" width="80%" src="./images/postmanReq.png"> 
+    <img align="center" width="80%" src="./IMAGES/postmanReq.png"> 
 <div style="display: inline_block" align="left">
 <br /><br />
 
