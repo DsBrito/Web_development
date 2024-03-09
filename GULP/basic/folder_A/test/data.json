@@ -1,0 +1,59 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "position": "Software Engineer",
+      "department": "Engineering",
+      "salary": 80000
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "position": "Marketing Manager",
+      "department": "Marketing",
+      "salary": 75000
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "position": "Sales Representative",
+      "department": "Sales",
+      "salary": 60000
+    }
+  ],
+  "products": [
+    {
+      "id": 101,
+      "name": "Laptop",
+      "category": "Electronics",
+      "price": 1200
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "category": "Electronics",
+      "price": 800
+    },
+    {
+      "id": 103,
+      "name": "Headphones",
+      "category": "Electronics",
+      "price": 150
+    }
+  ],
+  "customers": [
+    {
+      "id": 1001,
+      "name": "Alice Johnson",
+      "email": "alice@example.com",
+      "phone": "+1234567890"
+    },
+    {
+      "id": 1002,
+      "name": "Bob Smith",
+      "email": "bob@example.com",
+      "phone": "+1987654321"
+    }
+  ]
+}

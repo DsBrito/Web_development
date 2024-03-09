@@ -12,10 +12,10 @@
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-preset-env": "1.6.1",
-    "gulp": "4.0.2",
+    "gulp": "^4.0.2",
     "gulp-babel": "7.0.1",
     "gulp-concat": "2.6.1",
-    "gulp-sass": "4.0.1",
+    "gulp-sass": "5.0.0",
     "gulp-typescript": "4.0.2",
     "gulp-uglify": "3.0.0",
     "gulp-uglifycss": "1.0.9",

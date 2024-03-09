@@ -299,7 +299,7 @@ Ajax is a web development technique that allows you to update specific parts of 
   - Form validation
   - User authentication
   - Recommender systems
-  - Searches and filters    
+  - Searches and filters
   - Voting and rating systems
   - Chat Bot and Auto fill
 
@@ -346,13 +346,15 @@ The data sent by fetch() must be stringified. The URL was passed as an argument 
 
 Gulp is a popular JavaScript task runner built on Node.js. It helps automate repetitive tasks in your development workflow, such as compiling Sass to CSS, minifying JavaScript files, optimizing images, and much more. Gulp uses a code-over-configuration approach, allowing developers to write tasks using JavaScript code instead of configuring them through external files. This makes it highly flexible and customizable for various project requirements. Gulp operates through a system of plugins, which are small Node.js modules that perform specific tasks, making it easy to extend its functionality. Overall, Gulp is widely used in web development to streamline the build process and improve productivity.
 
-For use GULP need Update the file `pakage.json` to add "gulp-sass" dependency to version 5.0.0, leaving it in your file: "gulp-sass": "5.0.0".
+#### Babel
+- When we use the last version of javascript, some browsers may not support it, so we need to convert it to a version that all browsers can understand.
+Babel is a JavaScript compiler that allows developers to write code using the latest ECMAScript (JavaScript) syntax, while ensuring compatibility with older browsers and environments that may not support these newer features.
 
-<br /><br />
 <div style="display: inline_block" align="center">
-    <img align="center" width="65%" src="./IMAGES/gulp/gulp_config.png"> 
+    <img align="center" width="90%" src="./IMAGES/gulp/babel.PNG">
 <div style="display: inline_block" align="left">
 <br /><br />
+
 
 
 
@@ -361,8 +363,7 @@ For use GULP need Update the file `pakage.json` to add "gulp-sass" dependency to
     Some links with guide Gulp
     </a>
    <p align="center">
-    Ajax Documentation ->
-    <a href="https://gulpjs.com/docs/en/getting-started/quick-start"
+    Babel Compiler ->
+    <a href="https://babeljs.io/s"
        >here <-</a
     ><br />
-    
