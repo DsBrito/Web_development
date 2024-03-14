@@ -1,10 +1,10 @@
-import { Carro, Vendavel } from './produto'
+import { Car, Shop } from './product'
 
-function exibir(v: Vendavel) {
-    console.log(`${v.nome} custa ${v.preco}!`)
+function show(v: Shop) {
+    console.log(`${v.name} is ${v.price}!`)
 }
 
-const c = new Carro
-c.nome = 'Civic'
-c.preco = 89499.00
-exibir(c)
+const car = new Car
+car.name = 'Civic'
+car.price = 89499.00
+show(car)

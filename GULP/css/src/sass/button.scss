@@ -1,0 +1,16 @@
+button {
+    font-size: $average-size;
+    border-radius: 20px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.registe-button {
+    background-color: $red-bg-color;
+    color: $white-color;
+}
+
+.enter-button {
+    background-color: $green-bg-color;
+    color: $white-color;
+}

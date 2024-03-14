@@ -1,5 +1,5 @@
 * {
-    font-family: $fonte-principal;
+    font-family: $main-source;
 }
 
 html {
@@ -12,46 +12,43 @@ body {
     height: 100vh;
     grid-template-rows: 80px 1fr;
     grid-template-columns: 250px 1fr;
-    grid-template-areas: 
-        "logo cabecalho"
-        "menu conteudo";
+    grid-template-areas:
+        "logo header"
+        "menu header";
 }
 
 aside.logo {
     grid-area: logo;
 }
 
-header.principal {
-    grid-area: cabecalho;
-}
 
 aside.menu {
     grid-area: menu;
 }
 
 main.conteudo {
-    grid-area: conteudo;
+    grid-area: info;
 }
 
-@media(max-width: $largura-tablet) {
+@media(max-width: $tablet-width) {
     body {
         grid-template-rows: 80px 80px 1fr;
         grid-template-columns: 200px 1fr;
-        grid-template-areas: 
-            "logo cabecalho"
+        grid-template-areas:
+            "logo header"
             "menu menu"
-            "conteudo conteudo";
+            "info info";
     }
 }
 
-@media(max-width: $largura-celular) {
+@media(max-width: $cell-width) {
     body {
         grid-template-rows: 80px 80px 80px 1fr;
         grid-template-columns: 1fr;
-        grid-template-areas: 
+        grid-template-areas:
             "logo"
-            "cabecalho"
+            "header"
             "menu"
-            "conteudo";
+            "info";
     }
 }

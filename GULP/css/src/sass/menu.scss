@@ -1,5 +1,5 @@
 aside.menu {
-    background-color: $cor-bg-escura;
+    background-color: $black-bg-color;
     padding: 10px;
 }
 
@@ -8,15 +8,15 @@ aside.menu a {
     text-decoration: none;
     color: #FFF;
     margin: 10px 0px;
-    padding: 5px; 
-    font-size: $tamanho-medio;
+    padding: 5px;
+    font-size: $average-size;
 }
 
 aside.menu a:hover {
-    background-color: $cor-primaria;
+    background-color: $primary-color;
 }
 
-@media(max-width: $largura-tablet) {
+@media(max-width: $tablet-width) {
     aside.menu {
         display: flex;
         justify-content: flex-start;
@@ -29,7 +29,7 @@ aside.menu a:hover {
     }
 }
 
-@media(max-width: $largura-celular) {
+@media(max-width: $cell-width) {
     aside.menu {
         justify-content: center;
     }

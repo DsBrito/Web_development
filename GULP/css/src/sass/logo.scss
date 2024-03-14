@@ -2,11 +2,11 @@ aside.logo {
     display: flex;
     align-items: center;
     padding-left: 10px;
-    background-color: $cor-primaria;
-    color: $cor-branca;
+    background-color: $primary-color;
+    color: $white-color;
 }
 
-@media(max-width: $largura-celular) {
+@media(max-width: $cell-width) {
     aside.logo {
         justify-content: center;
     }
