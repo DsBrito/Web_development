@@ -13,21 +13,24 @@ body {
     grid-template-rows: 80px 1fr;
     grid-template-columns: 250px 1fr;
     grid-template-areas:
-        "logo header"
-        "menu header";
+        "css_logo css_header"
+        "css_menu css_header";
 }
 
-aside.logo {
-    grid-area: logo;
+aside.css_logo {
+    grid-area: css_logo;
 }
 
-
-aside.menu {
-    grid-area: menu;
+header.css_main {
+  grid-area: css_header;
 }
 
-main.conteudo {
-    grid-area: info;
+aside.css_menu {
+    grid-area: css_menu;
+}
+
+main.css_info {
+    grid-area: css_info;
 }
 
 @media(max-width: $tablet-width) {
@@ -35,9 +38,9 @@ main.conteudo {
         grid-template-rows: 80px 80px 1fr;
         grid-template-columns: 200px 1fr;
         grid-template-areas:
-            "logo header"
-            "menu menu"
-            "info info";
+            "css_logo css_header"
+            "css_menu css_menu"
+            "css_info css_info";
     }
 }
 
@@ -46,9 +49,9 @@ main.conteudo {
         grid-template-rows: 80px 80px 80px 1fr;
         grid-template-columns: 1fr;
         grid-template-areas:
-            "logo"
-            "header"
-            "menu"
-            "info";
+            "css_logo"
+            "css_header"
+            "css_menu"
+            "css_info";
     }
 }

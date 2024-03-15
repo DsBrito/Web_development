@@ -1,9 +1,9 @@
-aside.menu {
+aside.css_menu {
     background-color: $black-bg-color;
     padding: 10px;
 }
 
-aside.menu a {
+aside.css_menu a {
     display: block;
     text-decoration: none;
     color: #FFF;
@@ -12,17 +12,17 @@ aside.menu a {
     font-size: $average-size;
 }
 
-aside.menu a:hover {
+aside.css_menu a:hover {
     background-color: $primary-color;
 }
 
 @media(max-width: $tablet-width) {
-    aside.menu {
+    aside.css_menu {
         display: flex;
         justify-content: flex-start;
         align-items: center;
     }
-    aside.menu a {
+    aside.css_menu a {
         display: inline;
         padding: 10px;
         margin: 0px;
@@ -30,7 +30,7 @@ aside.menu a:hover {
 }
 
 @media(max-width: $cell-width) {
-    aside.menu {
+    aside.css_menu {
         justify-content: center;
     }
 }

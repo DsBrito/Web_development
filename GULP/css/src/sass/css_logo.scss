@@ -1,4 +1,4 @@
-aside.logo {
+aside.css_logo {
     display: flex;
     align-items: center;
     padding-left: 10px;
@@ -7,7 +7,7 @@ aside.logo {
 }
 
 @media(max-width: $cell-width) {
-    aside.logo {
+    aside.css_logo {
         justify-content: center;
     }
 }
