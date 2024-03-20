@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
-    "build": "gulp --production"
+    "build": "gulp --production",
+    "dist": "gulp clean --ship && gulp bundle --ship && gulp package-solution --ship"
   },
   "keywords": [],
   "author": "Cod3r",
@@ -13,7 +14,7 @@
   "devDependencies": {
     "babel-core": "6.26.3",
     "babel-preset-env": "1.6.1",
-    "font-awesome": "4.7.0",
+    "font-awesome": "^4.7.0",
     "gulp": "4.0.2",
     "gulp-babel": "7.0.1",
     "gulp-concat": "2.6.1",
@@ -23,5 +24,8 @@
     "gulp-uglifycss": "1.0.9",
     "gulp-watch": "5.0.1",
     "gulp-webserver": "0.9.1"
+  },
+  "dependencies": {
+    "sass": "^1.72.0"
   }
 }
