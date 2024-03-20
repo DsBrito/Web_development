@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Understanding jQueryy</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body class="info exercice">
+    <h1>Understanding jQuery</h1>
+    <div>1</div>
+    <div>2</div>
+
+    <script>
+      //selected div and hide/show
+      $("div").hide(3000).show(7000)
+      console.log("selected dive: ", $("div").get(0))
+
+      //verify if the object is empty
+      console.log("this object is empty? ", jQuery.isEmptyObject({}))
+
+      //create a new method to change the bg color
+      $.fn.yellowgreenBg = function () {
+        this.css("color", "yellowgreen")
+        return this
+      }
+      $("body").yellowgreenBg().fadeOut(5000).fadeIn(5000)
+    </script>
+  </body>
+</html>
