@@ -1,96 +1,84 @@
-<div slide>
-    <h1>[Simple IMG JPG]</h1>
-    <p>
-        <img
-            src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
-            alt="WALL OF A CITY"
-            width="500"
-            height="350"
-            title="WALL OF A CITY ~ cod3r img"
-        />
-    </p>
+<div wm-slider>
+  <p>
+    <img
+      src="http://files.cod3r.com.br/curso-web/imagem1.jpg"
+      alt="Muro da Cidade"
+      width="513"
+      height="342"
+      title="Muro da Cidade por Tarso Bessa"
+    />
+  </p>
 
-    <h1>[IMG WITH TEXT]</h1>
-    <p class="text">
-        <img
-            src="http://files.cod3r.com.br/curso-web/avatar.jpg"
-            alt="Avatar"
-            height="50"
-            align="left"
-            title="avatar text~ cod3r jpg"
-        />
-        Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
-        Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
-        Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
-        Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
-        Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
-        Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text, Text,
-        Text, Text, Text, Text, Text, Text,
-    </p>
+  <p>
+    <img src="http://files.cod3r.com.br/curso-web/imagem2.gif" alt="Intro Cod3r" height="342" />
+  </p>
 
-    <h1>[IMG WITH ZOOM]</h1>
-    <p class="city"></p>
+  <p class="circle">
+    <img src="http://files.cod3r.com.br/curso-web/imagem3.png" alt="Rio de Janeiro" height="342" />
+  </p>
 
-    <h1>[GIF IMG]</h1>
-    <p>
-        <img
-            src="http://files.cod3r.com.br/curso-web/imagem2.gif"
-            alt="INTRO COD3R"
-            height="280"
-            title="INTRO COD3R ~ cod3r gif"
-        />
-    </p>
+  <p class="text">
+    <img src="http://files.cod3r.com.br/curso-web/avatar.jpg" alt="Avatar" height="50" align="left" />
+    Texto sdfsdf ds fsdf sdfsdf sdfsdf fssdsdf sdf sdfs df sd sdf sdfsdf sdf sdfsdf sdf sd fs f sdf er fw r sd fasd
+    kjadshkjhd dkjheueuhek ekjhe kjehue ekjhe ekjh ekjheuekjhe ekjhekjhe ekjhe ehekjhekjhe kjeh e ekejhek jehe hekjhe ee
+    ekjhe ee kjehkjhe kejhkjeh ee kejh e ekjhekjehe ekejhekejh ekjhekjhe e ekjheekjhe ehekjh ee kejhekjhekjhe e ekjhek
+    ee ekjhekjh eee kjheekehekejhe e ekjehekhje ee
+  </p>
 
-    <h1>[PNG IMG ~ 200%]</h1>
-    <p class="circle">
-        <img
-            src="http://files.cod3r.com.br/curso-web/imagem3.png"
-            alt="Rio de Janeiro"
-            height="280"
-            title="Rio de Janeiro ~ cod3r png"
-        />
-    </p>
+  <p class="city"></p>
 
-    <h1>[PICTURE WITH CONDITION ~(min-width: 600px or..)]</h1>
-
-    <p>
-        <picture>
-            <source
-                srcset="http://files.cod3r.com.br/curso-web/logo-larga.png"
-                media="(min-width: 600px)"
-            />
-            <img
-                src="http://files.cod3r.com.br/curso-web/logo-estreita.png"
-                alt="Logo"
-            />
-        </picture>
-    </p>
+  <p>
+    <picture>
+      <source srcset="http://files.cod3r.com.br/curso-web/logo-larga.png" media="(min-width: 600px)" />
+      <img src="http://files.cod3r.com.br/curso-web/logo-estreita.png" alt="Logo" />
+    </picture>
+  </p>
 </div>
+
 <style>
-    .circle {
-        width: 500px;
-        background-color: white;
-    }
-    .text {
-        width: 400px;
-    }
-    .text img {
-        margin-right: 12px;
-    }
-    .city {
-        width: 513px;
-        height: 342px;
-        background-image: url('http://files.cod3r.com.br/curso-web/imagem4.jpg');
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: 200%;
-    }
+  p {
+    position: absolute;
+    display: none;
+  }
+
+  .circle {
+    width: 513px;
+    background-color: #444;
+  }
+
+  .text {
+    width: 400px;
+  }
+
+  .text img {
+    margin-right: 10px;
+  }
+
+  .city {
+    width: 513px;
+    height: 342px;
+    background-image: url("http://files.cod3r.com.br/curso-web/imagem4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+  }
 </style>
+
 <script>
-    function mover(elem, start, end, step, callback) {
-        const newStart = start - end;
-        if (newStart >= end) {
-            elem.style.left;
-        }
+  function move(elem, start, end, step, callback) {
+    const newStart = start - step
+    const milisec = 7
+    if (newStart >= end) {
+      elem.style.left = newStart + "px"
+      setTimeout(() => move(elem, newStart, end, step, callback), milisec)
+    } else {
+      callback()
     }
+  }
+
+  const p = document.querySelector("[wm-slider] > p")
+  p.style.display = "block"
+  move(p, 1500, -400, 5, () => {
+    console.log("end")
+  })
 </script>
