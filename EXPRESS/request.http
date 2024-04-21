@@ -1,0 +1,35 @@
+@url = http://localhost:3000
+@url2= http://localhost:3000/players
+### params
+GET {{url}}/players/2
+
+### query
+GET {{url}}/players/data
+?active=true
+&created=11/07/2018
+
+### array
+GET {{url}}/players
+###
+
+
+POST {{url}}/players
+Content-Type: application/json
+
+{
+    "id": 1,
+    "name": "SatyZ",
+    "class": "Assassin",
+    "side": "fury", 
+    "level": "80"
+    }
+      
+  
+###
+
+### simple
+GET {{url}}
+
+###
+# GET {{urlp}}
+
