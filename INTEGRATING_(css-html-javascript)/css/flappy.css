@@ -1,0 +1,64 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf') format('truetype');
+}
+
+[flappy]{
+    position: relative;
+    border: 15px solid #000;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+
+.bird{
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+
+.two-barrier{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    justify-content: space-between;
+}
+
+.barrier{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.barrier .barrier_border{
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639016, #a5e82e);
+    border: 2px solid #000;
+}
+
+.barrier .barrier_body{
+    height: 150px;
+    width: 110px;
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+    background: linear-gradient(90deg,  #639016, #a5e82e);
+    border: 2px solid #000;
+}
+
+.progress{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 100px;
+    z-index: 100;
+}

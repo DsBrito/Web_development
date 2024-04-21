@@ -1,3 +1,7 @@
 body {
-  background-color: blueviolet;
+  background-color: #04f;
+  background-image: url(../img/cod3r.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
 }

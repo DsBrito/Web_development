@@ -4,24 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server",
-    "build": "cross-env NODE_ENV=production webpack"
+    "build": "cross-env NODE_ENV=production webpack",
+    "clean-i": "npm cache clean --force && npm i"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "webpack-dev-server": "3.1.4",
     "file-loader": "1.1.11",
-    "cross-env": "5.1.5",
-    "optimize-css-assets-webpack-plugin": "4.0.1",
-    "uglifyjs-webpack-plugin": "1.2.5",
-    "node-sass": "6.0.1",
-    "sass-loader": "7.0.1",
-    "mini-css-extract-plugin": "0.4.0",
+    "webpack-dev-server": "3.1.4",
+    "cross-env": "^5.1.5",
     "css-loader": "0.28.11",
+    "mini-css-extract-plugin": "0.4.0",
+    "node-sass": "9.0.0",
+    "optimize-css-assets-webpack-plugin": "4.0.1",
+    "sass-loader": "7.0.1",
     "style-loader": "0.21.0",
-    "webpack": "4.8.1",
+    "terser-webpack-plugin": "^1.2.5",
+    "webpack": "4.8.3",
     "webpack-cli": "2.1.3"
   }
 }
