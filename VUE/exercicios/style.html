@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Applying Style</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/vue.min.js"></script>
+    <style>
+      .yG {
+        background-color: yellowgreen;
+        border-radius: 50%;
+        width: 700px;
+        height: 700px;
+      }
+    </style>
+  </head>
+  <body class="exercice">
+    <div
+      id="app"
+      @click="yellowgreenColor = !yellowgreenColor"
+      :class="{'yG':yellowgreenColor}"
+    >
+      Applying Style
+    </div>
+    <script>
+      new Vue({
+        el: "#app",
+        data: {
+          yellowgreenColor: false,
+        },
+      });
+    </script>
+  </body>
+</html>

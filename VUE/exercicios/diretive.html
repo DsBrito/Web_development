@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Directive</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/vue.min.js"></script>
+  </head>
+  <body class="exercice">
+    <div id="app">
+      <h3>Custom Directive</h3>
+      <input type="text" v-model="name" />
+      <div v-inverter="name"></div>
+    </div>
+    <script>
+      Vue.directive("inverter", {
+        componentUpdated(el, binding) {
+          const reverse = binding.value.split("").reverse().join("");
+          console.log(reverse);
+
+          el.innerHTML = reverse;
+        },
+      });
+
+      new Vue({
+        el: "#app",
+        data: {
+          name: "",
+        },
+      });
+    </script>
+  </body>
+</html>
