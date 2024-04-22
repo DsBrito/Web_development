@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Select Element #01</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <style>
+      .negrito {
+        font-weight: bold;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      form input,
+      form select,
+      form button {
+        margin: 10px;
+        font-size: 1.6em;
+      }
+    </style>
+  </head>
+
+  <body class="info exercice">
+    <h1>Select Element #01</h1>
+    <div>
+      <p>
+        Paragraph
+        <span class="bold">within span</span>
+      </p>
+    </div>
+    <div>
+      <ul id="fair">
+        <li>Rice</li>
+        <li mandatory>Beans</li>
+        <li class="optional">Meat</li>
+        <li class="optional">Egg</li>
+      </ul>
+    </div>
+    <form>
+      <input type="text" name="text" />
+      <input type="password" name="password" />
+      <input type="checkbox" name="check1" />
+      <input type="radio" name="radio1" />
+      <input type="file" name="file" />
+    </form>
+
+    <script>
+      $(document).ready(function () {
+        // Selecionando o parágrafo
+        $("p").css("color", "red")
+
+        // Selecionando o span
+        $("span").css("color", "blue")
+
+        // Selecionando o primeiro item da lista
+        $("li:first").css("color", "black")
+
+        // Selecionando o último item da lista
+        $("li:last").css("color", "purple")
+
+        // Selecionando o item com o atributo wm-obrigatorio
+        $("li[mandatory]").addClass("negrito")
+
+        // Adicionando uma classe
+        $("div p span").addClass("contrast")
+
+        //Exclusivo jQuery
+        $("li:first").css("border", "solid 3px yellow")
+
+        //filter
+        $("li:gt(1)").css("border", "solid 3px black")
+        $('div:contains("Paragr")').css("background-color", "black")
+
+        //forms
+        $("form *").hide()
+        $("form :text").show()
+        $("form :password").show()
+        $("form :checkbox").show()
+        $("form :radio").show()
+        $("form :file").show()
+      })
+    </script>
+  </body>
+</html>
