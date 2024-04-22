@@ -12,6 +12,10 @@
       .then(resp => resp.text())
       .then(html => {
         destiny.innerHTML = html
+        const resultado = html.match(/\<script\>([\s\S]*)\<\/script\>/)
+        if (resultado && resultado.length >= 2) {
+          eval(resultado[1])
+        }
       })
   }
 

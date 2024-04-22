@@ -1,0 +1,263 @@
+<!-- Título (jumbotron) -->
+<div class="jumbotron p-4 my-1">
+  <h1 class="display-4">Components</h1>
+  <p class="lead m-1">Some Bootstrap components exemples.</p>
+</div>
+
+<!-- Breadcrumb -->
+<nav
+  style="
+    --bs-breadcrumb-divider: url(
+      &#34;data:image/svg + xml,
+      %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+    );
+  "
+  aria-label="breadcrumb"
+>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#/pages/welcom.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Components</li>
+  </ol>
+</nav>
+
+<h1>
+  <!-- Botões -->
+  1. Buttons -
+  <small>
+    <a href="https://getbootstrap.com/docs/4.0/components/buttons/" target="_black">Documentação Oficial</a>
+  </small>
+  <div class="mb-3">
+    <button class="btn btn-danger">Danger</button>
+    <button class="btn btn-warning">Warning</button>
+    <button class="btn btn-outline-success">Success</button>
+    <button class="btn btn-dark">Dark</button>
+    <button class="btn disabled">Delete</button>
+    <button class="btn btn-info" data-toggle="button">Select</button>
+  </div>
+
+
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-info">Left</button>
+  <button type="button" class="btn btn-info active">Middle</button>
+  <button type="button" class="btn btn-info">Right</button>
+</div>
+
+<div class="dropdown">
+  <button class="btn btn-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Dropdown button
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+</div>
+</h1>
+
+
+
+  <!-- Progresso -->
+  <hr />
+  <h1 class="mt-5">
+    2. Progresso -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/components/progress/" target="_black">Documentação Oficial</a>
+    </small>
+  </h1>
+  <hr />
+
+  <div>
+    <div class="progress">
+      <div class="progress-bar bg-danger" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+
+    <div class="progress mb-4">
+      <div class="progress-bar progress-bar-striped bg-info" style="width: 50%;">50%</div>
+    </div>
+
+    <div class="progress mb-4">
+      <div class="bg-success progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">75%</div>
+    </div>
+</div>
+
+
+  <!-- Alertas -->
+  <h1 class="mt-5">
+    3. Mensagens (Alertas) -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/components/alerts/" target="_black">Documentação Oficial</a>
+    </small>
+  </h1>
+  <hr />
+
+<div>
+  <div class="alert alert-success" role="alert">
+    <h4>Ok!</h4>
+    This is a <strong> Sucess</strong> Sucesss!
+    <hr>
+    <p class="mb-0"> hehehe...</p>
+  </div>
+
+  <div class="alert alert-warning" role="alert">
+    This is a <strong> Warning</strong> alert—check it out!
+  </div>
+  <div class="alert alert-info" role="alert">
+    This is a <strong> Info</strong> alert—check it out!
+  </div>
+  <div class="alert alert-danger" role="alert">
+    This is a <strong> Danger</strong> alert—check it out!
+    <a href="https://github.com/dsbrito" class="alert-link">Check my Github</a>
+  </div>
+</div>
+
+
+  <!-- Peginação -->
+  <h1 class="mt-5">
+    4. Paginação -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/components/pagination/" target="_black">Documentação Oficial</a>
+    </small>
+  </h1>
+  <hr />
+
+  <nav aria-label="...">
+    <ul class="pagination">
+      <li class="page-item disabled">
+        <span class="page-link">Previous</span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item active">
+        <span class="page-link">
+          2
+          <span class="sr-only">(current)</span>
+        </span>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#">Next</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
+  <!-- Tooltip -->
+  <h1 class="mt-5">
+    5. Tooltip -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/components/tooltips/" target="_black">Documentação Oficial</a>
+    </small>
+  </h1>
+  <hr />
+
+
+<div>
+  <div class="alert alert-warning">
+    Need a JS function!
+    <strong> And now??</strong>
+  </div>
+</div>
+
+<button class="btn btn-danger"
+ data-toggle="tooltip" data-placement="right"
+ title="Hey, let me think!"> Delete
+</button>
+
+
+<!-- Slider -->
+<h1 class="mt-5">6. Slider -
+  <small>
+      <a href="https://getbootstrap.com/docs/4.0/components/carousel/" target="_black">Documentação Oficial</a>
+  </small>
+</h1>
+<hr>
+<div>
+  <div id="slider" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner bg-dark">
+          <div class="carousel-item active">
+              <img src="/imgs/slide1.png" alt="Slide1"
+                  class="d-block mx-auto">
+          </div>
+          <div class="carousel-item">
+              <img src="/imgs/slide2.png" alt="Slide2"
+                  class="d-block mx-auto">
+          </div>
+          <div class="carousel-item">
+              <img src="/imgs/slide3.png" alt="Slide3"
+                  class="d-block mx-auto">
+          </div>
+      </div>
+      <a href="#slider" class="carousel-control-prev"
+          data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a href="#slider" class="carousel-control-next"
+          data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+      </a>
+  </div>
+</div>
+
+
+
+
+
+  <!-- Accordion -->
+
+  <h1 class="mt-5">
+    7. Accordion -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/components/collapse/" target="_black">Documentação Oficial</a>
+    </small>
+  </h1>
+  <hr />
+
+  <div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h5 class="mb-0">
+          <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Collapsible Group Item #1
+          </button>
+        </h5>
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingTwo">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Collapsible Group Item #2
+          </button>
+        </h5>
+      </div>
+      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header" id="headingThree">
+        <h5 class="mb-0">
+          <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Collapsible Group Item #3
+          </button>
+        </h5>
+      </div>
+      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+        <div class="card-body">
+          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    $('[data-toggle="tooltip"]').tooltip()
+  </script>
+</div>

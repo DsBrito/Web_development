@@ -42,3 +42,22 @@ Fundamentals
 4. Flex - [Oficial Documentation](https://getbootstrap.com/docs/4.0/utilities/colors/)
 5. Images - [Oficial Documentation](https://getbootstrap.com/docs/4.0/content/images/)
 6. Float - [Oficial Documentation](https://getbootstrap.com/docs/4.0/utilities/float/)
+
+Components
+
+1. Buttons - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/buttons/)
+2. Progresso - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/progress/)
+3. Mensagens (Alertas) - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/alerts/)
+4. Paginação - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/pagination/)
+5. Tooltip - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/tooltips/)
+6. Slider - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/carousel/)
+7. Accordion - [Documentação Oficial](https://getbootstrap.com/docs/4.0/components/collapse/)
+
+Grids [Grid](https://getbootstrap.com/docs/4.0/layout/grid/)
+
+1. Basic Grid
+2. Responsive Grid
+3. Break Line
+4. Order
+5. Offset
+6. Alignment
