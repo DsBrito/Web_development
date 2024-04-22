@@ -1,0 +1,119 @@
+<!-- Título (jumbotron) -->
+<div class="jumbotron p-4 my-1">
+  <h1 class="display-4">Fundamentals</h1>
+  <p class="lead m-1">Some important resources about Bootstrap.</p>
+</div>
+
+<!-- Breadcrumb -->
+<nav
+  style="
+    --bs-breadcrumb-divider: url(
+      &#34;data:image/svg + xml,
+      %3Csvgxmlns='http://www.w3.org/2000/svg'width='8'height='8'%3E%3Cpathd='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z'fill='%236c757d'/%3E%3C/svg%3E&#34;
+    );
+  "
+  aria-label="breadcrumb"
+>
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#/pages/welcome.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Fundamentals</li>
+  </ol>
+</nav>
+<div class="exercice">
+  <h1>
+    1. Typography -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/content/typography/" target="_black"> Oficial Documentation</a>
+    </small>
+  </h1>
+  <hr />
+
+  <ul>
+    <li><strong>Reboot</strong> - Makes the style consistent between different browsers!</li>
+    <li><strong>Rems</strong> - Based on the root</li>
+    <li>Avoid <strong>margin-top</strong> - You will probably need to add some space</li>
+    <li><strong>box-sizing</strong> border-box</li>
+    <li>Native fonts</li>
+  </ul>
+
+  <h1 class="mt-5">
+    2. Spaces -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/utilities/spacing/" target="_black"> Oficial Documentation</a>
+    </small>
+  </h1>
+  <hr />
+
+  <!-- Spaces -->
+  <div class="mb-5">1 - margin base (5)</div>
+  <div class="m-4 py4">2 - margin paddin Y (4)</div>
+  <div class="pt-5">3 - paddin top (5)</div>
+  <div class="pt-0">4 - paddin top (0)</div>
+
+  <h1 class="mt-5">
+    3. Color -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/utilities/colors/" target="_black"> Oficial Documentation</a>
+    </small>
+  </h1>
+  <hr />
+
+  <!-- Color -->
+  <div class="my-1 p-3 bg-primary text-light">Primary color with text light</div>
+  <div class="my-1 p-3 bg-danger text-light">Danger color with text light</div>
+  <div class="my-1 p-3 bg-warning text-light">Warning color with text light</div>
+
+  <h1 class="mt-5">
+    4. Flex -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/utilities/flex/" target="_black"> Oficial Documentation</a>
+    </small>
+  </h1>
+  <hr />
+
+  <!-- Flex -->
+
+  <div class="d-flex flex-row">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>
+  <div class="d-flex flex-row-reverse">
+    <div class="p-2">Flex item 1</div>
+    <div class="p-2">Flex item 2</div>
+    <div class="p-2">Flex item 3</div>
+  </div>
+
+  <div class="d-sm-flex justify-content-start">...1</div>
+  <div class="d-sm-flex justify-content-end">...2</div>
+  <div class="d-sm-flex justify-content-center">...3</div>
+  <div class="d-sm-flex justify-content-between">...4</div>
+  <div class="d-sm-flex justify-content-around">...5</div>
+
+  <h1 class="mt-5">
+    5. Images -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/content/images/" target="_black"> Oficial Documentation</a>
+    </small>
+  </h1>
+  <hr />
+
+  <!-- Imagens -->
+
+  <h1 class="mt-5">
+    6. Float -
+    <small>
+      <a href="https://getbootstrap.com/docs/4.0/utilities/float/" target="_black"> Oficial Documentation</a>
+    </small>
+  </h1>
+  <hr />
+
+  <!-- Float -->
+</div>
+
+<style>
+  .exercice div {
+    border: solid 8px #000;
+    font-size: 2rem;
+  }
+</style>
