@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modifying HTML #03</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body class="info exercice">
+    <h1>Modifying HTML #03</h1>
+    <div id="info"></div>
+
+    <script>
+      // $(document).ready(function() {
+      $(function () {
+        const students = [
+          { name: "Ana", result: 9.1 },
+          { name: "Bianca", result: 8.4 },
+          { name: "Carlos", result: 7.6 },
+          { name: "Julia", result: 9.7 },
+        ]
+
+        const lines = students.map(students => {
+          const tdName = $("<td>").html(students.name)
+          const tdResult = $("<td>").html(students.result)
+          // return $('<tr>').append(tdname).append(tdresult)
+          // return $('<tr>').append([tdname, tdresult])
+          return $("<tr>").append(tdName, tdResult)
+        })
+
+        const table = $("<table>").append(lines).css("border", "solid 5px")
+        $("#info").append(table)
+      })
+    </script>
+  </body>
+</html>
