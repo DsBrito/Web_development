@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulating attributes</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <style>
+      [wm-clock] {
+        text-align: center;
+      }
+
+      [wm-clock] button {
+        font-size: 1.6em;
+        padding: 0px 25px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body class="info exercice">
+    <h1>Manipulating attributes</h1>
+    <div wm-clock="1000">wm-clock</div>
+    <div wm-clock="5000">wm-clock</div>
+
+    <script>
+      function Clock(DOM) {
+        const rightTime = $("<p>").html("hour"); //paragráfo para a hora correta
+        const slowButton = $("<button>").html("-");
+        const fastButton = $("<button>").html("+");
+
+        //como é um elemento da DOM, é necessário passar ele dentro do jQuery
+        const element_jquery = $(DOM);
+
+        element_jquery.append(rightTime, slowButton, fastButton);
+
+        //parse para string -> int
+        const getInterval = () => parseInt(element_jquery.attr("wm-clock"));
+
+        let timer = null;
+        const start = () => {
+          if (timer) clearInterval(timer);
+          timer = setInterval(() => {
+            rightTime.html(new Date().toLocaleString("pt-BR"));
+          }, getInterval());
+        };
+        const changeInterval = (delta) => {
+          const newInterval = Math.max(getInterval() + delta, 1000);
+          element_jquery.attr("wm-clock", newInterval);
+          start();
+        };
+
+        fastButton.click((event) => changeInterval(1000));
+        slowButton.click((event) => changeInterval(-1000));
+        start();
+      }
+
+      //passando o elemento da DOM para a função
+      $("[wm-clock]").each((i, DOM) => new Clock(DOM));
+    </script>
+  </body>
+</html>

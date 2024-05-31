@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Manipulating CSS</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+  </head>
+
+  <body class="info exercice">
+    <h1>Manipulating CSS</h1>
+    <div id="div1">1</div>
+    <div id="div2">2</div>
+    <div id="div3">3</div>
+    <div id="result"></div>
+    <script>
+      //printando o tipo de font na tela
+      const font = $("#div1").css("font-family");
+      $("#result").append(`The font is ${font}`);
+
+      //alterando tamanho da fonte e cor
+      $("#div1").css("font-size", "3em");
+      $("#div1").css({ "font-size": "10em", color: "black" });
+      $("#div2").css("font-size", function () {
+        return `${10 * 2}em`;
+      });
+
+      $("#div2").addClass("contrast");
+      const hasClass = $("#div2").hasClass("contrast");
+      $("#result").append(`<br>Have any Class? ${hasClass}`);
+    </script>
+  </body>
+</html>

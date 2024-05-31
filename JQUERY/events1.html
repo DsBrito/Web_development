@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Events #01</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <style>
+      input {
+        font-size: 2em;
+      }
+    </style>
+  </head>
+
+  <body class="info exercice">
+    <h1>Event #01</h1>
+    <div id="position"></div>
+    <div id="click">Click: 0</div>
+    <div id="divTeste">BOOoooh!</div>
+
+    <input type="text" placeholder="Background Color ex: #FAF" />
+
+    <script>
+      $(function () {
+        $("#divTeste").hover(
+          function () {
+            //Ao posicionar o cursor sobre a div
+            $(this).css("background", "red");
+          },
+          function () {
+            //Ao remover o cursor da div
+            $(this).css("background", "white");
+          }
+        );
+      });
+      //capturar o movimento do mouse
+      function showMousePosition(event) {
+        $("#position").html(`x: ${event.clientX} y: ${event.clientY}`);
+        $("#position").hover(
+          function () {
+            $(this).css("background", "blue");
+          },
+          function () {
+            $(this).css("background", "green");
+          }
+        );
+      }
+      $("body").on("mousemove", showMousePosition);
+
+      //capturar a quantidade de cliques
+      let click = 0;
+      $("body").click((event) => {
+        $("#click").html(`Click: ${++click}`);
+      });
+
+      //
+      const mainBG = $("body").css("background-color");
+
+      $("input").keyup(function (event) {
+        const newBG = $(this).val();
+
+        if (newBG.match(/#[/da-fA-F]{3,6}/)) {
+          $("body").css("background-color", newBG);
+        } else {
+          $("body").css("background-color", mainBG);
+        }
+      });
+    </script>
+  </body>
+</html>

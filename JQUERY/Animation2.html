@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Animation #02</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/jquery.js"></script>
+    <style>
+      body {
+        position: relative;
+        background-color: #999;
+        color: #000;
+      }
+
+      div {
+        position: absolute;
+        display: inline;
+        border: solid 10px #000;
+        padding: 50px;
+        font-size: 3em;
+        background-color: crimson;
+      }
+    </style>
+  </head>
+
+  <body>
+    <button>Start</button>
+    <div>Animate!</div>
+
+    <script>
+      function changeWidth(value, duration, callback) {
+        $("div").animate({ width: `+=${value}` }, duration, callback);
+      }
+
+      function moveDiagonal(value, duration, callback) {
+        $("div").animate(
+          { top: `+=${value}`, left: `+=${value}` },
+          duration,
+          callback
+        );
+      }
+
+      function spin(value, duration, callback) {
+        $("div").animate(
+          { transform: `+=${value}` },
+          {
+            step: function (value) {
+              $(this).css("transform", `rotate(${value}deg)`);
+            },
+            duration: duration,
+          },
+          "linear",
+          callback
+        );
+      }
+      $("button").click((e) => {
+        changeWidth(300, 100, () => {
+          changeWidth(-300, "slow", () => {
+            moveDiagonal(300, 600, () => {
+              spin(3300, 3000);
+
+              spin(-3300, 3000);
+              changeWidth(300);
+              changeWidth(-310);
+              moveDiagonal(-270);
+            });
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
